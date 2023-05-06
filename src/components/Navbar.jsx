@@ -9,7 +9,7 @@ const Navbar = () => {
     const [activePage, SetActivePage] = useState("")
     
     return (
-        <nav className={`${styles.paddingX} w-full fixed z-20 backdrop-blur-sm pt-3`}>
+        <nav className={`${styles.paddingX} w-full fixed z-20 backdrop-blur-md pt-3`}>
             <div>
                 <span className="flex px-2">
                     <span className= "w-full flex justify-start space-x-3 items-center">
