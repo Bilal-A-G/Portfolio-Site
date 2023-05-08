@@ -26,6 +26,8 @@ const MoonCanvas = () => {
                                minPolarAngle={Math.PI/2}
                                enablePan={false}
                                target={[0, 0, window.innerWidth/281]}
+                               autoRotate
+                               autoRotateSpeed={0.05}
                 />
                 <Moon/>
             </Suspense>
