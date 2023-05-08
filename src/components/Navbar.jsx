@@ -32,7 +32,7 @@ const Navbar = () => {
                     </div>
                 </span>
             </div>
-            <div className="pt-4 pr-20">
+            <div className="pt-4">
                 <div className="bg-green-200 h-[1px] rounded-md"/>
             </div>
         </nav>

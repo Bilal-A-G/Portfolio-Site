@@ -3,18 +3,18 @@ import {Canvas} from '@react-three/fiber';
 import {Gltf, OrbitControls, Preload, useGLTF} from "@react-three/drei";
 import CanvasLoader from "./Loader.jsx";
 
-const Test3D = () => {
+const Moon = () => {
     const computer = useGLTF("./desktop_pc/scene.gltf");
     return (
         <mesh>
             <hemisphereLight intensity={0.15} groundColor = "black"/>
-            <pointLight intensity = {1}/>
-            <primitive object = {computer.scene} scale = {1.7} position = {[2, -2, -3]}/>
+            <pointLight intensity = {2}/>
+            <primitive object = {computer.scene} scale = {2} position = {[0, 0, 3]}/>
         </mesh>
     )
 }
 
-const ComputerCanvas = () => {
+const MoonCanvas = () => {
     return (
         <Canvas frameloop="demand"
                 shadows
@@ -26,8 +26,9 @@ const ComputerCanvas = () => {
                                maxPolarAngle={Math.PI/2}
                                minPolarAngle={Math.PI/2}
                                enablePan={false}
+                               target={[2, 5, 12]}
                 />
-                <Test3D/>
+                <Moon/>
             </Suspense>
 
             <Preload all/>
@@ -35,4 +36,4 @@ const ComputerCanvas = () => {
     )
 }
 
-export default ComputerCanvas
+export default MoonCanvas

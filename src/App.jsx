@@ -5,7 +5,6 @@ import About from "./components/About.jsx";
 import Tech from "./components/Tech.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
-import Test3D from "./components/Test3D.jsx";
 
 const App = () => {
   return (
