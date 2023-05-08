@@ -9,8 +9,8 @@ import Contact from "./components/Contact.jsx";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0">
-          <div className="bg-cover bg-no-repeat bg-center bg-black">
+      <div>
+          <div className="w-screen h-screen bg-hero-pattern">
               <Navbar/>
               <Hero/>
           </div>

@@ -5,22 +5,22 @@ import {styles} from "../styles.js";
 
 const Hero = () => {
     return (
-        <div className="pt-10">
-            <div className="relative">
-                <div className="flex h-screen w-screen absolute pl-[300px]">
+        <div>
+            <div className="absolute">
+                <div className="relative w-screen h-screen pl-[300px] z-20 pt-10">
                     <MoonCanvas/>
                 </div>
             </div>
-            <div className="text-green-300 text-[13px] pl-20 absolute pt-[430px]">
-                <p>//Hello, I am </p>
-                <p className="text-white text-[30px]">Bilal Abdul Gaffoor</p>
+            <div className="absolute pt-[430px] pl-20">
+                <div className="text-green-300 text-[13px] z-1 pl-3">
+                    <p>//Hello, I am </p>
+                    <p className="text-white text-[35px]">Bilal Abdul Gaffoor</p>
 
-                <p className="text-[10px] pt-4">//I am a passionate game programmer, interested in</p>
-                <p className="text-[10px]">//systems, graphics, and gameplay programming.</p>
-                <p className="text-[10px]">//Currently, I am looking for co-op/internship positions</p>
+                    <p className="text-[10px] pt-4">//I am a passionate game programmer,</p>
+                    <p className="text-[10px]">//interested in systems, graphics, and gameplay.</p>
+                    <p className="text-[10px]">//Currently, I am looking for co-op/internship positions</p>
+                </div>
             </div>
-            <section className="w-full h-screen mx-auto">
-            </section>
         </div>
     )
 }

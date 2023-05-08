@@ -8,7 +8,7 @@ const Moon = () => {
     return (
         <mesh>
             <hemisphereLight intensity={1} groundColor = "black"/>
-            <primitive object = {computer.scene} scale = {window.innerWidth/20000} position = {[0, 0, 0]}/>
+            <primitive object = {computer.scene} scale = {window.innerWidth/19500} position = {[0, 0, 0]}/>
         </mesh>
     )
 }
@@ -25,7 +25,7 @@ const MoonCanvas = () => {
                                maxPolarAngle={Math.PI/2}
                                minPolarAngle={Math.PI/2}
                                enablePan={false}
-                               target={[0, 0, window.innerWidth/300]}
+                               target={[0, 0, window.innerWidth/281]}
                 />
                 <Moon/>
             </Suspense>
