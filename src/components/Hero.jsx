@@ -6,12 +6,12 @@ import {styles} from "../styles.js";
 const Hero = () => {
     return (
         <div className="pt-10">
-            <div className="pt-10 relative">
-                <div className="flex h-screen w-screen absolute">
+            <div className="relative">
+                <div className="flex h-screen w-screen absolute pl-[300px]">
                     <MoonCanvas/>
                 </div>
             </div>
-            <div className="text-green-300 text-[13px] pl-20 absolute pt-[480px]">
+            <div className="text-green-300 text-[13px] pl-20 absolute pt-[430px]">
                 <p>//Hello, I am </p>
                 <p className="text-white text-[30px]">Bilal Abdul Gaffoor</p>
 
