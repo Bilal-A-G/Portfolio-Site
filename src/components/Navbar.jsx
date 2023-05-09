@@ -9,7 +9,7 @@ const Navbar = () => {
     const [menuOpen, ToggleMenu] = useState(false)
     
     return (
-        <nav className="px-4 w-full fixed z-40">
+        <nav className="px-4 w-full xs:pr-10 pr-7 fixed z-40">
             <div className="top-0 flex items-center w-full h-full pt-2 pb-2 backdrop-blur-md">
                 <div className="flex items-center w-full">
                     <CodeText
@@ -27,10 +27,9 @@ const Navbar = () => {
                                 <CodeText
                                     code="#define"
                                     text={
-                                        <a href={`#${section.link}`} onClick={() => SetActivePage(section.title)}>
-                                            <div className={`${activePage === section.title ? "bg-selected" : "bg-minor"} hover:bg-selected rounded-md px-[1px]`}>
-                                                {section.title}
-                                            </div>
+                                        <a href={`#${section.link}`} onClick={() => {SetActivePage(section.title); ToggleMenu(false)}}
+                                           className={`${activePage === section.title ? "text-selected" : "text-callToAction"} hover:text-selected`}>
+                                            {section.title}
                                         </a>}
                                     colour="background"
                                     size="text-[13px]"
@@ -39,23 +38,22 @@ const Navbar = () => {
                             ))
                         }
                     </div>
-                    <div className="flex xs:hidden gap-10">
-                        <img alt="menu" src={menuOpen ? close : menu} onClick={() => ToggleMenu(!menuOpen)} className={`w-[22px] h-[22px] cursor-pointer ${menuOpen ? "border-solid" : "border-none"} hover:border-solid ${!menuOpen ? "border-none" : ""} border-minor border-[1px] p-[5px] rounded-md`}/>
+                    <div className="flex xs:hidden">
+                        <img alt="menu" src={menuOpen ? close : menu} onClick={() => ToggleMenu(!menuOpen)} className={`w-[22px] h-[22px] cursor-pointer ${menuOpen ? "border-solid" : "border-none"} hover:border-solid ${!menuOpen ? "border-none" : ""} border-selected border-[1px] p-[5px] rounded-md mr-2`}/>
                     </div>
                 </div>
             </div>
             <div className="bg-minor w-full h-[1px] flex justify-center "/>
             <div className="w-full flex justify-end">
-                <div className={`${menuOpen ? "flex-col" : "hidden"} xs:hidden p-2 mt-4 flex mr-2 justify-center gap-5 border-solid border-[1px] border-minor rounded-xl backdrop-blur-md`}>
+                <div className={`${menuOpen ? "flex-col" : "hidden"} xs:hidden p-2 mt-4 flex mr-4 justify-center gap-5 border-solid border-[1px] border-minor rounded-xl backdrop-blur-md`}>
                     {
                         navSections.map((section) => (
                         <CodeText
                             code="#define"
                             text={
-                                <a href={`#${section.link}`} onClick={() => {SetActivePage(section.title); ToggleMenu(false)}}>
-                                    <div className={`${activePage === section.title ? "bg-selected" : "bg-minor"} hover:bg-selected rounded-md px-[1px]`}>
-                                        {section.title}
-                                    </div>
+                                <a href={`#${section.link}`} onClick={() => {SetActivePage(section.title); ToggleMenu(false)}} 
+                                   className={`${activePage === section.title ? "text-selected" : "text-callToAction"} hover:text-selected`}>
+                                    {section.title}
                                 </a>}
                             colour="background"
                             size="text-[10px]"
@@ -64,7 +62,6 @@ const Navbar = () => {
                         ))
                     }
                 </div>
-                <div className={`${menuOpen ? "flex" : "hidden"} xs:hidden flex h-[50px] w-[1px] bg-minor`}></div>
             </div>
         </nav>
     )
