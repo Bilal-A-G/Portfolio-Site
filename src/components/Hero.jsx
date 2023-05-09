@@ -1,7 +1,6 @@
 ﻿import React from "react";
 import {motion} from "framer-motion";
 import MoonCanvas from "./Moon.jsx";
-import {styles} from "../styles.js";
 
 const Hero = () => {
     return (

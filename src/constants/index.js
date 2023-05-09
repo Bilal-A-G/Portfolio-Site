@@ -1,41 +1,14 @@
-﻿import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-} from "../assets";
-
-export const navLinks = [
+﻿export const navSections = [
     {
-        id: "about",
+        link: "about",
         title: "About",
     },
     {
-        id: "projects",
+        link: "projects",
         title: "Projects",
     },
     {
-        id: "contact",
+        link: "contact",
         title: "Contact",
     },
 ];
@@ -43,74 +16,15 @@ export const navLinks = [
 const services = [
     {
         title: "Web Developer",
-        icon: web,
     },
     {
         title: "React Native Developer",
-        icon: mobile,
     },
     {
         title: "Backend Developer",
-        icon: backend,
     },
     {
         title: "Content Creator",
-        icon: creator,
-    },
-];
-
-const technologies = [
-    {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
-    },
-    {
-        name: "JavaScript",
-        icon: javascript,
-    },
-    {
-        name: "TypeScript",
-        icon: typescript,
-    },
-    {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
-    {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
-        name: "git",
-        icon: git,
-    },
-    {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
-        icon: docker,
     },
 ];
 
@@ -133,7 +47,6 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
         source_code_link: "https://github.com/",
     },
     {
@@ -154,7 +67,6 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
         source_code_link: "https://github.com/",
     },
     {
@@ -175,9 +87,8 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
         source_code_link: "https://github.com/",
     },
 ];
 
-export { services, technologies, projects };
+export { services, projects };
