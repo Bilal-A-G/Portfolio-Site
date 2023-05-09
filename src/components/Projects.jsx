@@ -29,15 +29,13 @@ const Projects = () => {
     return (
         <>
             <motion.div variants={textVariant()}>
-                <div className="text-green-300 pt-20 justify-center flex bg-hero-pattern">
-                    <div className="text-green-300 justify-center flex bg-black pt-5 select-none">
-                        //-------------------------------------------------------------------------------------------------------------------//
-                    </div>
+                <div className="text-minor justify-center flex bg-background pt-5 select-none text-clip xs:text-[15px] text-[11px]">
+                    //-------------------------------------------------------------------------------------------------------------------//
                 </div>
-                <div className="bg-black w-screen h-screen pt-20 flex justify-center">
+                <div className="bg-background w-screen h-screen pt-20 flex justify-center">
                     <div>
-                        <p className="text-green-300 text-[13px] justify-center flex select-none">//I have worked on various</p>
-                        <p className="text-white text-[35px] justify-center flex select-none">Personal Projects</p>
+                        <p className="text-minor text-[13px] justify-center flex select-none">//I have worked on various</p>
+                        <p className="text-callToAction text-[35px] justify-center flex select-none">Personal Projects</p>
 
                         <div className="mt-20 flex w-full flex-wrap gap-10">
                             {services.map((service, index) => (

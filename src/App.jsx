@@ -8,15 +8,13 @@ import Contact from "./components/Contact.jsx";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-background h-screen w-screen">
+      <div className="relative bg-hero-background bg-center bg-no-repeat bg-cover z-0 h-screen w-screen">
           <div className="bg-cover bg-center bg-no-repeat bg-hero-background">
               <Navbar/>
-              Hero Section
+              <Hero/>
           </div>
-          About me
-          Projects
+          <Projects/>
           <div className="relative z-0">
-              Contact
           </div>
       </div>
     </BrowserRouter>
