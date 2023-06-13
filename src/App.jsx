@@ -1,11 +1,16 @@
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Home from "./components/homePage/Home.jsx";
+import About from "./components/aboutPage/About.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 const App = () => {
     return(
         <BrowserRouter>
-            <div className="relative z-0 bg-black">
-                Well, hello there
-            </div>
+            <Navbar/>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/about" element={<About/>}/>
+            </Routes>
         </BrowserRouter>
     );
 }
