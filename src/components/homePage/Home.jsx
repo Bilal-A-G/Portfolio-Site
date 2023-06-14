@@ -1,7 +1,9 @@
-﻿const Home = () => {
+﻿import Hero from "./Hero.jsx";
+
+const Home = () => {
     return(
-      <div>
-          Home
+      <div className="w-full h-full">
+            <Hero/>
       </div>  
     );
 }
