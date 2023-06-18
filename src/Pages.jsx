@@ -1,7 +1,7 @@
 ﻿import Home from "./components/homePage/Home.jsx";
 import About from "./components/aboutPage/About.jsx";
-import Projects from "./components/projectsPage/Projects.jsx";
 import Contact from "./components/contactPage/Contact.jsx";
+import Projects from "./components/projectsPage/Projects.jsx";
 
 const Pages = [
     {path : "/", component : <Home/>, name : "Home"},
