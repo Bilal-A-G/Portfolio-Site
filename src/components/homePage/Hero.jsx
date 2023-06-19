@@ -5,14 +5,14 @@
                 <div>
                     Hello, I am
                 </div>
-                <div className="font-semibold text-6xl">
+                <div className="font-semibold text-7xl">
                     Bilal A-G
                 </div>
                 <div className="text-lg">
                     Welcome to my website
                 </div>
                 <div className="pt-[70px] pl-5">
-                    <button className="h-[35px] w-[200px] bg-dark-red rounded-full text-white font-black">
+                    <button className="h-[35px] w-[200px] bg-dark-red rounded-full text-white font-black" onClick={() => {document.documentElement.scrollTop = 820}}>
                         About Me
                     </button>
                 </div>

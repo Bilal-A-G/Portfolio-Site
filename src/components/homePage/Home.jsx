@@ -1,6 +1,8 @@
 ﻿import Hero from "./Hero.jsx";
 import About from "./About.jsx";
 import Projects from "./Projects.jsx";
+import Contact from "./Contact.jsx";
+import Footer from "../Footer.jsx";
 
 const Home = () => {
     return(
@@ -8,6 +10,8 @@ const Home = () => {
           <Hero/>
           <About/>
           <Projects/>
+          <Contact/>
+          <Footer/>
       </div>  
     );
 }
