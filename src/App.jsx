@@ -10,6 +10,7 @@ const App = () => {
             <Routes>
                 {Pages.map(({path, component}) => <Route path={path} element={component}/>)}
             </Routes>
+            <Footer/>
         </BrowserRouter>
     );
 }
