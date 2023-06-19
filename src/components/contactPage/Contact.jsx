@@ -1,7 +1,9 @@
-﻿const Contact = () => {
+﻿import SectionHeader from "../SectionHeader.jsx";
+
+const Contact = () => {
     return(
       <div>
-          Contact
+          <SectionHeader title="Contact Me" subtitle="Here's how you can" underlineLength="w-[590px]"/>
       </div>  
     );
 }
