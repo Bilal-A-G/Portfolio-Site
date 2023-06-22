@@ -2,6 +2,7 @@
 import ImageTextRow from "../ImageTextRow.jsx";
 import Projects from "./Projects.jsx";
 import Contact from "./Contact.jsx";
+import Button from "../Button.jsx";
 
 const Home = () => {
     return(
@@ -18,7 +19,7 @@ const Home = () => {
                       <div className='h-[50px] w-[50px] bg-[url("UnityLogo.png")] bg-cover bg-center ml-1 mt-[3px]'/>
                       <div className='h-[55px] w-[55px] bg-[url("UnrealLogo.png")] bg-cover bg-center ml-1 mt-[3px]'/>
                   </div>
-                  <a className="select-none bg-dark-red text-white px-20 py-1 rounded-full mt-[15px] font-semibold" href="/about">Read More</a>
+                  <Button text={"Read More"} link={"/about"} width={"px-20"}/>
               </>
           }/>
           <Projects/>
