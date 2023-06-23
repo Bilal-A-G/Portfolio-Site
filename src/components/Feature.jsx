@@ -1,29 +1,40 @@
-﻿const Feature = ({name, description, image, odd, underline}) => {
+﻿import ImageWithBorder from "./ImageWithBorder.jsx";
+
+const Feature = ({name, description, image, odd, underline}) => {
     return(
-      <div className="flex">
-          {odd ? <>
-                  <div className="w-1/2 text-white">
-                      <p className="text-3xl font-semibold justify-center flex w-full pt-[130px] pl-[180px]">{name}</p>
-                      <p className="text-[16px] justify-center flex w-full pt-[30px] pl-[400px]">{description}</p>
-                      {underline ? <div className="w-[1200px] h-[2px] mt-[130px] ml-[220px] bg-white"/> : <div></div>}
-                  </div>
-                  <div className="w-[300px] h-[300px] ml-[50px] mt-[40px] border-2 border-white rounded-full">
-                      <div className={`w-[260px] h-[260px] mt-[18px] ml-[18px] rounded-full ${image} bg-cover bg-center`}></div>
-                  </div>
-              </>
-              :
-              <>
-                  <div className="w-1/2">
-                      <div className="w-[300px] h-[300px] ml-[400px] mt-[40px] border-2 border-white rounded-full">
-                          <div className={`w-[260px] h-[260px] mt-[18px] ml-[18px] rounded-full ${image} bg-cover bg-center`}></div>
+      <div>
+          {odd ? 
+              <div>
+                  <div className="flex">
+                      <div className="w-1/2 text-white">
+                          <p className="text-3xl font-semibold pl-[30%] flex w-full pt-[10%]">{name}</p>
+                          <div className="w-full flex justify-center">
+                              <div className="text-[16px] pt-[8%] pl-[30%]">{description}</div>
+                          </div>
                       </div>
-                      {underline ? <div className="w-[1200px] h-[2px] mt-[40px] ml-[80px] bg-white"/> : <div></div>}
+                      <div className="w-1/2 justify-center flex grid place-items-center">
+                        <ImageWithBorder width={"w-[400px]"} height={"h-[400px]"} image={image} 
+                                         innerHeight={"h-[350px]"} innerWidth={"w-[350px]"}/>
+                      </div>
                   </div>
-                  <div className="w-1/2 text-white">
-                      <p className="text-3xl font-semibold justify-start flex w-full pt-[130px] pl-[60px]">{name}</p>
-                      <p className="text-[16px] justify-start flex w-1/2 pt-[30px] pl-[60px]">{description}</p>
+                  {underline ? <div className="w-[85%] h-[2px] mt-[2%] ml-[10%] bg-white"/> : <div></div>}
+              </div>
+              :
+              <div>
+                  <div className="flex">
+                      <div className="w-1/2 justify-center flex grid place-items-center">
+                          <ImageWithBorder width={"w-[400px]"} height={"h-[400px]"} image={image}
+                                           innerHeight={"h-[350px]"} innerWidth={"w-[350px]"}/>
+                      </div>
+                      <div className="w-1/2 text-white">
+                          <p className="text-3xl font-semibold flex w-full pt-[10%] pr-[30%]">{name}</p>
+                          <div className="w-full flex justify-center">
+                              <div className="text-[16px] pt-[8%] pr-[30%]">{description}</div>
+                          </div>
+                      </div>
                   </div>
-              </>
+                  {underline ? <div className="w-[85%] h-[2px] mt-[2%] ml-[5%] bg-white"/> : <div></div>}
+              </div>
           }
       </div>  
     );

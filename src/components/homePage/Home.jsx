@@ -12,7 +12,7 @@ const Home = () => {
               <>
                   <p className="pt-[50px] text-[16px] text-black w-[300px] tracking-wide">I'm a games programmer, that's interested in gameplay, graphics and engines.</p>
                   <p className="pt-[20px] text-[14px] text-black w-[300px] tracking-wide">I'm proficient in the following tools:</p>
-                  <div className="flex w-full h-full pt-2">
+                  <div className="flex w-full pt-[2%] pb-[10%]">
                       <div className='h-[60px] w-[60px] bg-[url("CSharpLogo.png")] bg-cover bg-center'/>
                       <div className='h-[48px] w-[43px] bg-[url("C++Logo.png")] bg-cover bg-center mt-[6px] ml-1'/>
                       <div className='h-[65px] w-[65px] bg-[url("OpenGLLogo.png")] bg-cover bg-center ml-2'/>
