@@ -6,7 +6,7 @@ import ImportantLinks from "./ImportantLinks.jsx";
 const Project = ({name}) => {
     return(
       <div>
-          <SectionHeader title={name} subtitle={"Here's more information about"} underlineLength={"w-[530px]"}/>
+          <SectionHeader title={name} subtitle={"Here's more information about"} underlineLength={"w-[730px]"}/>
           <ImageTextRow title={"Description"} subtitle={"Here's a short"} image={"bg-[url(Placeholder.png)]"} leftAlign={true} 
                         extras={<div className={"w-[400px] pt-[60px]"}>
                             Lorem ipsum dolor sit amet consecutor idk words words words 
