@@ -12,7 +12,8 @@ const App = () => {
             <Navbar/>
             <Routes>
                 {Pages.map(({path, component}) => <Route path={path} element={component}/>)}
-                {ProjectData.map(({name, path}) => <Route path={path} element={<Project name={name}/>}/>)}
+                {ProjectData.map(({name, path, bottom, image, description, longDescription, features, github, itch, trello}) => 
+                    <Route path={path} element={<Project name={name} image={image} description={longDescription} features={features} github={github} itch={itch} trello={trello}/>}/>)}
             </Routes>
             <Footer/>
         </BrowserRouter>

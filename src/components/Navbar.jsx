@@ -28,7 +28,7 @@ const Navbar = () => {
                                   extras={<>
                                       <div className={"bg-[url('DropdownInactive.svg')] group-hover/top:bg-[url('DropdownActive.svg')] w-3 h-3 mt-[7px] ml-[3px] bg-no-repeat"}/>
                                       <div className={"bg-off-white w-[180px] mt-[36px] absolute invisible group-hover/top:visible hover:!visible z-20 rounded-b-md"}>
-                                          {children.map(({name, path, bottom}) => <NavbarLink text={name} link={path} select={true} props={!bottom ? "pt-2 pb-2 justify-center" : "pt-2 pb-2 justify-center rounded-b-md"} extras={<div className="ml-[14px] mt-[2px] h-6 w-6 rounded-full bg-[url('Placeholder.png')] bg-center bg-cover"/>}/>)}
+                                          {children.map(({name, path, bottom, image}) => <NavbarLink text={name} link={path} select={true} props={!bottom ? "pt-2 pb-2 justify-center" : "pt-2 pb-2 justify-center rounded-b-md"} extras={<div className={`ml-[14px] mt-[2px] h-6 w-6 rounded-full ${image} bg-center bg-cover`}/>}/>)}
                                       </div>
                                   </>
                       }/>
