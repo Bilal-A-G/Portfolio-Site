@@ -1,4 +1,5 @@
 ﻿import Pages from "../Pages.jsx";
+import Styles from "../Styles.jsx";
 
 const NavbarLink = ({text, select, extras, link, props, group}) => {
     return(
@@ -13,22 +14,22 @@ const NavbarLink = ({text, select, extras, link, props, group}) => {
 
 const Navbar = () => {
     return(
-      <nav className="bg-off-white flex w-full h-[52px] z-20">
-          <div className="w-1/4 h-full">
-              <div className="justify-center pb-2 h-full flex text-[16px] text-black font-bold tracking-wider px-2">
-                  <NavbarLink select={false} extras={<><p className="font-[900]">()[]</p><p>Bilal</p><p>A-G</p></>} link={"/"} props={"space-x-2 px-2 pt-3 h-full"}/>
+      <nav className="bg-off-white flex w-full xl:h-[50px] sm:h-[40px]">
+          <div className="h-full w-1/4">
+              <div className={`flex justify-center ${Styles.Body} text-black font-semibold`}>
+                  <NavbarLink select={false} extras={<p>Bilal A-G</p>} link={"/"} props={"py-2"}/>
               </div>
           </div>
-          <div className="w-3/4 ml-[220px] flex text-[14px] font-medium tracking-wider">
+          <div className={`w-3/4 ml-[15%] flex ${Styles.Subtitle} font-semibold`}>
               {Pages.map(({path, component, name, hasChildren, children}) =>
                   !hasChildren ? 
-                  <NavbarLink text={name} select={true} link={path} props={"px-3 pt-4 h-full"}/>
+                  <NavbarLink text={name} select={true} props={"h-full px-3 py-3"} link={path}/>
                       :
-                      <NavbarLink text={name} select={true} props={"px-3 pt-4 h-full"} group={"group/top"} 
+                      <NavbarLink text={name} select={true} props={"h-full px-3 py-3"} group={"group/top"} 
                                   extras={<>
-                                      <div className={"bg-[url('DropdownInactive.svg')] group-hover/top:bg-[url('DropdownActive.svg')] w-3 h-3 mt-[7px] ml-[3px] bg-no-repeat"}/>
-                                      <div className={"bg-off-white w-[180px] mt-[36px] absolute invisible group-hover/top:visible hover:!visible z-20 rounded-b-md"}>
-                                          {children.map(({name, path, bottom, image}) => <NavbarLink text={name} link={path} select={true} props={!bottom ? "pt-2 pb-2 justify-center" : "pt-2 pb-2 justify-center rounded-b-md"} extras={<div className={`ml-[14px] mt-[2px] h-6 w-6 rounded-full ${image} bg-center bg-cover`}/>}/>)}
+                                      <div className={"bg-[url('DropdownInactive.svg')] group-hover/top:bg-[url('DropdownActive.svg')] w-3 h-3 mt-[10%] ml-[3px] bg-no-repeat"}/>
+                                      <div className={"mt-[41.1%] bg-off-white absolute invisible group-hover/top:visible hover:!visible z-20 rounded-b-md"}>
+                                          {children.map(({name, path, bottom, image}) => <NavbarLink text={name} link={path} select={true} props={!bottom ? "w-full w-[200px] px-[10px] py-[5px]" : "w-full w-[200px] px-[10px] py-[5px] rounded-b-md"} extras={<div className={`ml-[14px] mt-[2px] xl:h-6 xl:w-6 sm:h-[2px] sm:w-[2px] rounded-full ${image} bg-center bg-cover`}/>}/>)}
                                       </div>
                                   </>
                       }/>

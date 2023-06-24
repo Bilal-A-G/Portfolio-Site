@@ -3,7 +3,7 @@ import Styles from "../Styles.jsx";
 
 const Text = ({leftAlign, subtitle, title, extras}) => {
     return(
-        <div className={`w-1/2 text-black mt-[10%] ${leftAlign ? "pl-[10%]" : "pl-[15%]"}`}>
+        <div className={`w-1/2 text-black mt-[8%] ${leftAlign ? "pl-[10%]" : "pl-[15%]"}`}>
             <p className={`${Styles.Body}`}>{subtitle}</p>
             <p className={`${Styles.SectionSubHeader} mt-[1%]`}>{title}</p>
             {extras}
@@ -23,9 +23,9 @@ const Image = ({leftAlign, image}) => {
     );
 }
 
-const ImageTextRow = ({leftAlign, subtitle, title, image, extras}) => {
+const ImageTextRow = ({leftAlign, subtitle, title, image, extras, id}) => {
     return(
-        <div className="w-full bg-off-white flex pb-[5%]">
+        <div id={id} className="w-full bg-off-white flex pb-[5%]">
             {leftAlign ?
                 <>
                     <Image leftAlign={leftAlign} image={image}/>

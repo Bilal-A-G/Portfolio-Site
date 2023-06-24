@@ -5,10 +5,10 @@ import Styles from "../../Styles.jsx";
 
 const Projects = () => {
     return(
-        <div className="w-full bg-black pb-[10%] text-white">
+        <div className="w-full bg-black pb-[6%] text-white">
             <p className={`w-full justify-center pt-[8%] flex ${Styles.Body}`}>Here are some of my</p>
             <p className={`w-full justify-center mt-[1%] flex ${Styles.SectionSubHeader}`}>Personal Projects</p>
-            <div className="w-full gap-[10%] items-center mt-[6%] grid place-items-center justify-center flex auto-cols-max grid-flow-col">
+            <div className="w-full gap-[8%] items-center mt-[4%] grid place-items-center justify-center flex auto-cols-max grid-flow-col">
                 {ProjectData.map(({name, path, bottom, image, description}) =>
                     <div className="text-white w-[300px]">
                         <p className={`text-white ${Styles.SubSectionHeader} mb-[10%] justify-center flex`}>{name}</p>
