@@ -1,28 +1,28 @@
-﻿const Hero = () => {
+﻿import ImageWithBorder from "../ImageWithBorder.jsx";
+
+const Hero = () => {
     return(
-        <div className="inline-flex w-full h-[800px] bg-black">
-            <div className="space-y-3 mt-[150px] ml-[220px] w-[500px] text-white">
-                <div>
+        <div className="flex w-full pb-[6%] bg-black">
+            <div className="space-y-3 mt-[150px] ml-[220px] w-1/3 justify-end text-white">
+                <div className="w-full justify-start flex">
                     Hello, I am
                 </div>
-                <div className="font-semibold text-7xl">
+                <div className="font-semibold text-7xl w-full justify-start flex">
                     Bilal A-G
                 </div>
-                <div className="text-lg">
+                <div className="text-lg w-full justify-start">
                     Welcome to my website
                 </div>
-                <div className="pt-[70px] pl-5">
+                <div className="pt-[70px] w-full flex justify-start">
                     <button className="h-[35px] w-[200px] bg-dark-red rounded-full text-white font-black" onClick={() => {document.documentElement.scrollTop = 820}}>
                         About Me
                     </button>
                 </div>
             </div>
-            <div className="relative h-[700px] w-full flex ml-5 mt-10">
-                <div className="ml-[50px] mt-[28px] w-[690px] h-[690px] rounded-full border-2 absolute">
-                    <div className="bg-[url('MoonTest.png')] h-[650px] w-[650px] bg-cover mt-[15px] ml-[15px]"/>
-                </div>
-                <div className="h-[80px] w-[80px] mt-[590px] ml-[10px] rounded-full border-2 z-10 absolute"></div>
-                <div className="h-[45px] w-[45px] mt-[50px] ml-[650px] rounded-full border-2 z-10 absolute"></div>
+            <div className="w-2/3">
+                <ImageWithBorder image={"bg-[url('MoonTest.png')]"} width={"w-[690px]"} 
+                                 height={"h-[690px]"} innerWidth={"w-[650px]"} innerHeight={"h-[650px]"}/>
+                <div className="h-[80px] w-[80px] ml-[10px] rounded-full border-2"></div>
             </div>
         </div>
     )

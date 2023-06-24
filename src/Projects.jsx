@@ -36,7 +36,7 @@
                         <div className="flex"><p>o</p> <p className="pl-[20px]">Composition and Polymorphism over Inheritance</p></div>
                         <div className="flex"><p>o</p> <p className="pl-[20px]">Abstraction</p></div>
                         
-                        <div className="pt-[20px] pb-[20px]">
+                        <div className="pt-[20px] pb-[10%]">
                             Furthermore, most code in the project is highly reusable and easy to extend. Most of this
                             was implemented via the W_I_Zr_Ds package
                         </div>
