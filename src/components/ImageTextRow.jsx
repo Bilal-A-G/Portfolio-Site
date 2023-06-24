@@ -1,10 +1,11 @@
 ﻿import ImageWithBorder from "./ImageWithBorder.jsx";
+import Styles from "../Styles.jsx";
 
 const Text = ({leftAlign, subtitle, title, extras}) => {
     return(
-        <div className={`w-1/2 text-black mt-[120px] space-y-2 ${leftAlign ? "pl-[10%]" : "pl-[15%]"}`}>
-            <p className="text-[16px] text-black">{subtitle}</p>
-            <p className="text-5xl font-semibold text-black">{title}</p>
+        <div className={`w-1/2 text-black mt-[10%] ${leftAlign ? "pl-[10%]" : "pl-[15%]"}`}>
+            <p className={`${Styles.Body}`}>{subtitle}</p>
+            <p className={`${Styles.SectionSubHeader} mt-[1%]`}>{title}</p>
             {extras}
         </div>
     );
@@ -13,8 +14,11 @@ const Text = ({leftAlign, subtitle, title, extras}) => {
 const Image = ({leftAlign, image}) => {
     return(
         <div className={`${leftAlign ? "ml-[5%]" : "ml-[0px]"} mt-[4%] ${leftAlign ? "w-[50%]" : "w-[45%]"} bg-black rounded-[40px] inline flex grid place-items-center pb-[4%]`}>
-            <ImageWithBorder image={image} innerWidth={"w-[400px]"} innerHeight={"h-[400px]"} height={"h-[450px]"} width={"w-[450px]"}/>
-            <div className={`${leftAlign ? "ml-[65%]" : "mr-[65%]"} h-[60px] w-[60px] border-2 rounded-full`}/>
+            <div className="mt-[6%]">
+                <ImageWithBorder image={image} style={Styles.MediumImage}/>
+            </div>
+            <div className={`${leftAlign ? "ml-[30%]" : "mr-[30%]"} mt-[30%] 
+            xl:h-[70px] xl:w-[70px] md:h-[30px] md:w-[30px] sm:h-[20px] sm:w-[20px] h-[10px] w-[10px] border-2 rounded-full absolute`}/>
         </div>
     );
 }

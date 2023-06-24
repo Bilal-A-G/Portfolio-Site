@@ -3,24 +3,25 @@ import ImageTextRow from "../ImageTextRow.jsx";
 import Projects from "./Projects.jsx";
 import Contact from "./Contact.jsx";
 import Button from "../Button.jsx";
+import Styles from "../../Styles.jsx";
 
 const Home = () => {
     return(
       <div className="w-full h-full">
           <Hero/>
           <ImageTextRow image="bg-[url('Placeholder.png')]" title="About Me" subtitle="Here's a little bit" leftAlign={true} extras={
-              <>
-                  <p className="pt-[50px] text-[16px] text-black w-[300px] tracking-wide">I'm a games programmer, that's interested in gameplay, graphics and engines.</p>
-                  <p className="pt-[20px] text-[14px] text-black w-[300px] tracking-wide">I'm proficient in the following tools:</p>
-                  <div className="flex w-full pt-[2%] pb-[10%]">
-                      <div className='h-[60px] w-[60px] bg-[url("CSharpLogo.png")] bg-cover bg-center'/>
-                      <div className='h-[48px] w-[43px] bg-[url("C++Logo.png")] bg-cover bg-center mt-[6px] ml-1'/>
-                      <div className='h-[65px] w-[65px] bg-[url("OpenGLLogo.png")] bg-cover bg-center ml-2'/>
-                      <div className='h-[50px] w-[50px] bg-[url("UnityLogo.png")] bg-cover bg-center ml-1 mt-[3px]'/>
-                      <div className='h-[55px] w-[55px] bg-[url("UnrealLogo.png")] bg-cover bg-center ml-1 mt-[3px]'/>
+              <div className="text-black">
+                  <p className={`mt-[10%] ${Styles.Body} pr-[50%]`}>I'm a games programmer, that's interested in gameplay, graphics and engines.</p>
+                  <p className={`mt-[8%] ${Styles.Body} pr-[50%]`}>I'm proficient with the following tools:</p>
+                  <div className="flex w-full pt-[2%] pb-[10%] grid place-items-center auto-cols-max grid-flow-col gap-[2%]">
+                      <div className='h-[10px] w-[10px] sm:h-[15px] sm:w-[15px] md:h-[20px] md:w-[20px] lg:h-[30px] lg:w-[30px] 2xl:h-[50px] 2xl:w-[50px] bg-[url("CSharp.svg")] bg-cover bg-center'/>
+                      <div className='h-[10px] w-[10px] sm:h-[15px] sm:w-[15px] md:h-[20px] md:w-[20px] lg:h-[30px] lg:w-[30px] 2xl:h-[50px] 2xl:w-[50px] bg-[url("CPlusPlus.svg")] bg-cover bg-center'/>
+                      <div className='h-[10px] w-[10px] sm:h-[15px] sm:w-[15px] md:h-[20px] md:w-[20px] lg:h-[30px] lg:w-[30px] 2xl:h-[50px] 2xl:w-[50px] bg-[url("OpenGL.svg")] bg-cover bg-center'/>
+                      <div className='h-[10px] w-[10px] sm:h-[15px] sm:w-[15px] md:h-[20px] md:w-[20px] lg:h-[30px] lg:w-[30px] 2xl:h-[50px] 2xl:w-[50px] bg-[url("Unity.svg")] bg-cover bg-center'/>
+                      <div className='h-[10px] w-[10px] sm:h-[15px] sm:w-[15px] md:h-[20px] md:w-[20px] lg:h-[30px] lg:w-[30px] 2xl:h-[50px] 2xl:w-[50px] bg-[url("Unreal.svg")] bg-cover bg-center'/>
                   </div>
-                  <Button text={"Read More"} link={"/about"} width={"px-20"}/>
-              </>
+                  <Button text={"Read More"} link={"/about"} width={"px-[15%]"}/>
+              </div>
           }/>
           <Projects/>
           <Contact/>

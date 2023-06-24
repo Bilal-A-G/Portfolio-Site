@@ -1,28 +1,22 @@
 ﻿import ImageWithBorder from "../ImageWithBorder.jsx";
+import Styles from "../../Styles.jsx";
 
 const Hero = () => {
     return(
         <div className="flex w-full pb-[6%] bg-black">
-            <div className="space-y-3 mt-[150px] ml-[220px] w-1/3 justify-end text-white">
-                <div className="w-full justify-start flex">
-                    Hello, I am
-                </div>
-                <div className="font-semibold text-7xl w-full justify-start flex">
-                    Bilal A-G
-                </div>
-                <div className="text-lg w-full justify-start">
-                    Welcome to my website
-                </div>
-                <div className="pt-[70px] w-full flex justify-start">
-                    <button className="h-[35px] w-[200px] bg-dark-red rounded-full text-white font-black" onClick={() => {document.documentElement.scrollTop = 820}}>
+            <div className="space-y-2 mt-[10%] ml-[18%] w-1/3 text-white">
+                <p className={`${Styles.Body} w-full justify-start flex`}>Hello, I am</p>
+                <p className={`${Styles.Hero} w-full justify-start flex`}>Bilal A-G</p>
+                <p className={`${Styles.Body} w-full justify-start flex`}>Welcome to my website</p>
+                <div className="pt-[20%] w-full flex justify-start">
+                    <button className={`${Styles.Button} w-[50%] py-[1%] bg-dark-red rounded-full text-white`} onClick={() => {document.documentElement.scrollTop = 820}}>
                         About Me
                     </button>
                 </div>
             </div>
-            <div className="w-2/3">
-                <ImageWithBorder image={"bg-[url('MoonTest.png')]"} width={"w-[690px]"} 
-                                 height={"h-[690px]"} innerWidth={"w-[650px]"} innerHeight={"h-[650px]"}/>
-                <div className="h-[80px] w-[80px] ml-[10px] rounded-full border-2"></div>
+            <div className="w-2/3 grid place-items-center place-items-center grid flex mt-[2%]">
+                <ImageWithBorder image={"bg-[url('MoonTest.png')]"} style={Styles.LargeImage}/>
+                <div className="xl:h-[80px] xl:w-[80px] md:h-[40px] md:w-[40px] sm:h-[30px] sm:w-[30px] h-[20px] w-[20px] mr-[50%] rounded-full border-2"></div>
             </div>
         </div>
     )

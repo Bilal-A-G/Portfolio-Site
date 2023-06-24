@@ -1,4 +1,5 @@
 ﻿import ImageWithBorder from "./ImageWithBorder.jsx";
+import Styles from "../Styles.jsx";
 
 const Feature = ({name, description, image, odd, underline}) => {
     return(
@@ -13,8 +14,7 @@ const Feature = ({name, description, image, odd, underline}) => {
                           </div>
                       </div>
                       <div className="w-1/2 justify-center flex grid place-items-center">
-                        <ImageWithBorder width={"w-[400px]"} height={"h-[400px]"} image={image} 
-                                         innerHeight={"h-[350px]"} innerWidth={"w-[350px]"}/>
+                        <ImageWithBorder image={image} style={Styles.MediumImage}/>
                       </div>
                   </div>
                   {underline ? <div className="w-[85%] h-[2px] mt-[2%] ml-[10%] bg-white"/> : <div></div>}
@@ -23,8 +23,7 @@ const Feature = ({name, description, image, odd, underline}) => {
               <div>
                   <div className="flex">
                       <div className="w-1/2 justify-center flex grid place-items-center">
-                          <ImageWithBorder width={"w-[400px]"} height={"h-[400px]"} image={image}
-                                           innerHeight={"h-[350px]"} innerWidth={"w-[350px]"}/>
+                          <ImageWithBorder image={image} style={Styles.MediumImage}/>
                       </div>
                       <div className="w-1/2 text-white">
                           <p className="text-3xl font-semibold flex w-full pt-[10%] pr-[30%]">{name}</p>
