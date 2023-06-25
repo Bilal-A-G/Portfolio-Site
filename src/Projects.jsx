@@ -8,35 +8,35 @@
                     It has been in development for several years to ensure quality
                     and is currently going through a huge rewrite and shift in aesthetics  
                 </p>
-                <p className="pt-[30px]">
+                <p className="pt-[5%]">
                     Furthermore, I created several tools to ease development of this project.
                     To reuse these tools in the future, they have been published as a Unity package named W_I_Zr_Ds
                 </p>
-                <p className="pt-[30px] underline decoration-dark-red"><a href="https://github.com/Bilal-A-G/W_I_Zr_Ds" target="_blank">W I Zr Ds on Github</a></p>
+                <p className="pt-[10%] underline decoration-dark-red"><a href="https://github.com/Bilal-A-G/W_I_Zr_Ds" target="_blank">W I Zr Ds on Github</a></p>
             </div>, 
         features: 
             [{name : "Satisfying Gunplay", 
                 description: 
                     <div>
                         This project uses several techniques that made the gunplay very satisfying, these include:
-                        <div className="flex pt-[20px]"><p>o</p> <p className="pl-[20px]">Screenshake (when the gun is fired)</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[20px]">Audio</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[20px]">Particles</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[20px]">Weapon Sway (based on mouse position and move direction)</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[20px]">Animations (procedural and keyframed)</p></div>
+                        <div className="flex pt-[8%]"><p>o</p> <p className="pl-[6%]">Screenshake (when the gun is fired)</p></div>
+                        <div className="flex"><p>o</p> <p className="pl-[6%]">Audio</p></div>
+                        <div className="flex"><p>o</p> <p className="pl-[6%]">Particles</p></div>
+                        <div className="flex"><p>o</p> <p className="pl-[6%]">Weapon Sway (based on mouse position and move direction)</p></div>
+                        <div className="flex"><p>o</p> <p className="pl-[6%]">Animations (procedural and keyframed)</p></div>
                     </div>, odd : true, underline : true}, 
                 {name : "Solid Architecture", 
                 description : 
                     <div>
                         This project makes use of various design patterns and principles of Object Oriented Programming such as:
                         
-                        <div className="flex pt-[20px]"><p>o</p> <p className="pl-[20px]">Observer</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[20px]">State</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[20px]">Object Pooling</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[20px]">Composition and Polymorphism over Inheritance</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[20px]">Abstraction</p></div>
+                        <div className="flex md:pt-[20px] pt-[5px]"><p>o</p> <p className="pl-[6%]">Observer</p></div>
+                        <div className="flex"><p>o</p> <p className="pl-[6%]">State</p></div>
+                        <div className="flex"><p>o</p> <p className="pl-[6%]">Object Pooling</p></div>
+                        <div className="flex"><p>o</p> <p className="pl-[6%]">Composition and Polymorphism over Inheritance</p></div>
+                        <div className="flex"><p>o</p> <p className="pl-[6%]">Abstraction</p></div>
                         
-                        <div className="pt-[20px] pb-[10%]">
+                        <div className="pt-[10%] pb-[10%]">
                             Furthermore, most code in the project is highly reusable and easy to extend. Most of this
                             was implemented via the W_I_Zr_Ds package
                         </div>

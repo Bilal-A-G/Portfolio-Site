@@ -23,21 +23,17 @@
     Hero : 
         "2xl-[86px] xl:text-[72px] lg:text-[57px] md:text-[40px] sm:text-[36px] text-[20px] font-semibold",
     SectionHeader :
-        "",
-    SectionSubtitle :
-        "",
+        "2xl-[72px] xl:text-[60px] lg:text-[48px] md:text-[36px] sm:text-[30px] text-[17px] font-semibold",
     SectionSubHeader :
         "2xl-[57px] xl:text-[48px] lg:text-[38px] md:text-[28px] sm:text-[23px] text-[19px] font-semibold",
     SubSectionHeader :
-        "2xl-[32px] xl:text-[27px] lg:text-[21px] md:text-[16px] sm:text-[13px] text-[10px] font-regular",
+        "2xl-[32px] xl:text-[27px] lg:text-[21px] md:text-[16px] sm:text-[13px] text-[10px]",
     Button :
         "2xl:text-[17px] xl:text-[14px] lg:text-[11px] md:text-[8px] sm:text-[6px] text-[4px] font-black",
     Body :
         "2xl:text-[17px] xl:text-[14px] lg:text-[11px] md:text-[8px] sm:text-[6px] text-[4px]",
     Subtitle:
         "2xl:text-[14px] xl:text-[12px] lg:text-[8px] md:text-[5px] sm:text-[4px] text-[3px] font-regular",
-    PointForm : 
-        "",
     
 }
 

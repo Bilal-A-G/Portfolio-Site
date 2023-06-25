@@ -2,13 +2,14 @@
 import ImageTextRow from "../ImageTextRow.jsx";
 import Features from "./Features.jsx";
 import ImportantLinks from "./ImportantLinks.jsx";
+import Styles from "../../Styles.jsx";
 
 const Project = ({name, image, description, features, github, itch, trello}) => {
     return(
       <div>
-          <SectionHeader title={name} subtitle={"Here's more information about"} underlineLength={"w-[730px]"}/>
+          <SectionHeader title={name} subtitle={"Here's more information about"}/>
           <ImageTextRow title={"Description"} subtitle={"Here's a short"} image={image} leftAlign={true} 
-                        extras={<div className={"w-[400px] pt-[60px]"}>
+                        extras={<div className={`pr-[20%] pt-[10%] ${Styles.Body}`}>
                             {description}
                         </div>}/>
           <Features features={features}/>

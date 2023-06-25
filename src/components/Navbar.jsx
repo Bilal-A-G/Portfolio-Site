@@ -28,7 +28,7 @@ const Navbar = () => {
                       <NavbarLink text={name} select={true} props={"h-full px-3 py-3"} group={"group/top"} 
                                   extras={<>
                                       <div className={"bg-[url('DropdownInactive.svg')] group-hover/top:bg-[url('DropdownActive.svg')] w-3 h-3 mt-[10%] ml-[3px] bg-no-repeat"}/>
-                                      <div className={"mt-[41.1%] bg-off-white absolute invisible group-hover/top:visible hover:!visible z-20 rounded-b-md"}>
+                                      <div className={"mt-[41.1%] w-[200px] bg-off-white absolute invisible group-hover/top:visible hover:!visible z-20 rounded-b-md"}>
                                           {children.map(({name, path, bottom, image}) => <NavbarLink text={name} link={path} select={true} props={!bottom ? "w-full w-[200px] px-[10px] py-[5px]" : "w-full w-[200px] px-[10px] py-[5px] rounded-b-md"} extras={<div className={`ml-[14px] mt-[2px] xl:h-6 xl:w-6 sm:h-[2px] sm:w-[2px] rounded-full ${image} bg-center bg-cover`}/>}/>)}
                                       </div>
                                   </>

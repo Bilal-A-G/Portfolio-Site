@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm.jsx";
 const Contact = () => {
     return(
       <div>
-          <SectionHeader title="Contact Me" subtitle="Here's how you can" underlineLength="w-[580px]"/>
+          <SectionHeader title="Contact Me" subtitle="Here's how you can"/>
           <ContactForm/>
       </div>  
     );
