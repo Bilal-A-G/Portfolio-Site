@@ -11,13 +11,13 @@ const Footer = () => {
                     <div className="w-1/2 flex justify-center mt-[2%]">
                         <p className={`${Styles.Subtitle}`}>Copyright 2023 Bilal Abdul Gaffoor</p>
                     </div>
-                    <button className={`${Styles.Body} mt-[1.5%] ml-[30%]`} onClick={() => document.documentElement.scrollTop = 0}>Back To Top</button>
+                    <button className={`${Styles.Body} mt-[1.5%] md:ml-[30%] ml-[25%]`} onClick={() => document.documentElement.scrollTop = 0}>Back To Top</button>
                 </div>
-                <div className="flex ml-[21%] mt-[4%]">
-                    <div className="sm:w-[20px] sm:h-[20px] md:w-[26px] md:h-[26px] lg:w-[35px] lg:h-[35px] w-[10px] h-[10px] bg-[url('GithubInverted.svg')] bg-cover bg-center rounded-full">
+                <div className="flex ml-[21%] md:mt-[4%] mt-[10%]">
+                    <div className="sm:w-[20px] sm:h-[20px] md:w-[26px] md:h-[26px] lg:w-[35px] lg:h-[35px] w-[24px] h-[24px] bg-[url('GithubInverted.svg')] bg-cover bg-center rounded-full">
                         <a className="h-full w-full block " href="https://github.com/Bilal-A-G" target="_blank"></a>
                     </div>
-                    <div className="sm:w-[20px] sm:h-[20px] md:w-[26px] md:h-[26px] lg:w-[35px] lg:h-[35px] w-[10px] h-[10px] bg-[url('LinkedIn.svg')] bg-cover bg-center rounded-full ml-[2%]">
+                    <div className="sm:w-[20px] sm:h-[20px] md:w-[26px] md:h-[26px] lg:w-[35px] lg:h-[35px] w-[24px] h-[24px] bg-[url('LinkedIn.svg')] bg-cover bg-center rounded-full md:ml-[2%] ml-[5%]">
                         <a className="h-full w-full block " href="https://www.linkedin.com/in/bilal-abdul-g-288a75239/" target="_blank"></a>
                     </div>
                 </div>
