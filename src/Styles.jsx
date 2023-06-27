@@ -31,9 +31,11 @@
     Button :
         "2xl:text-[17px] xl:text-[14px] lg:text-[11px] md:text-[8px] sm:text-[6px] text-[4px] font-black",
     Body :
-        "2xl:text-[17px] xl:text-[14px] lg:text-[11px] md:text-[8px] sm:text-[6px] text-[4px]",
+        "2xl:text-[17px] xl:text-[14px] lg:text-[11px] md:text-[8px] sm:text-[6px] text-[17px]",
+    SmallBody :
+        "2xl:text-[12px] xl:text-[14px] lg:text-[11px] md:text-[8px] sm:text-[6px] text-[12px]",
     Subtitle:
-        "2xl:text-[14px] xl:text-[12px] lg:text-[8px] md:text-[5px] sm:text-[4px] text-[3px] font-regular",
+        "2xl:text-[14px] xl:text-[12px] lg:text-[8px] md:text-[5px] sm:text-[4px] text-[14px] font-regular",
     
 }
 

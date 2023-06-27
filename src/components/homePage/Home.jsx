@@ -24,7 +24,7 @@ const Home = () => {
                   </div>
               </div>
           }/>
-          <Projects/>
+          {/*<Projects/>*/}
           <Contact/>
       </div>  
     );
