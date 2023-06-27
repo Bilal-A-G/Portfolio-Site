@@ -23,9 +23,9 @@
     Hero : 
         "2xl-[86px] xl:text-[72px] lg:text-[57px] md:text-[40px] sm:text-[36px] text-[70px] font-semibold",
     SectionHeader :
-        "2xl-[72px] xl:text-[60px] lg:text-[48px] md:text-[36px] sm:text-[30px] text-[17px] font-semibold",
+        "2xl-[72px] xl:text-[60px] lg:text-[48px] md:text-[36px] sm:text-[30px] text-[45px] font-semibold",
     SectionSubHeader :
-        "2xl-[57px] xl:text-[48px] lg:text-[38px] md:text-[28px] sm:text-[23px] text-[40px] font-semibold",
+        "2xl-[57px] xl:text-[48px] lg:text-[38px] md:text-[28px] sm:text-[23px] text-[35px] font-semibold",
     SubSectionHeader :
         "2xl-[32px] xl:text-[27px] lg:text-[21px] md:text-[16px] sm:text-[13px] text-[20px]",
     Button :

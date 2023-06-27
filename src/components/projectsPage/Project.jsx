@@ -9,7 +9,7 @@ const Project = ({name, image, description, features, github, itch, trello}) => 
       <div>
           <SectionHeader title={name} subtitle={"Here's more information about"}/>
           <ImageTextRow title={"Description"} subtitle={"Here's a short"} image={image} leftAlign={true} 
-                        extras={<div className={`pr-[20%] pt-[10%] ${Styles.Body}`}>
+                        extras={<div className={`md:pr-[20%] md:px-[0%] px-[20%] md:pt-[10%] pt-[5%] ${Styles.Body}`}>
                             {description}
                         </div>}/>
           <Features features={features}/>

@@ -42,7 +42,7 @@ const CombinedText = ({leftAlign, subtitle, title, extras}) => {
 
 const Image = ({leftAlign, image}) => {
     return(
-        <div className={`${leftAlign ? "md:ml-[5%] ml-[0%]" : "md:ml-[0px] ml-[0%]"} mt-[4%] ${leftAlign ? "md:w-[50%] w-[0%]" : "md:w-[45%] w-[80%]"} bg-black md:rounded-[40px] rounded-[20px] flex grid place-items-center md:py-[3%] py-[5%]`}>
+        <div className={`${leftAlign ? "md:ml-[5%] ml-[0%]" : "md:ml-[0px] ml-[0%]"} mt-[4%] ${leftAlign ? "md:w-[50%] w-[0%]" : "md:w-[45%] w-[80%]"} bg-black md:rounded-[40px] rounded-[10px] flex grid place-items-center md:py-[3%] py-[5%]`}>
             <div>
                 <ImageWithBorder image={image} style={Styles.MediumImage}/>
             </div>

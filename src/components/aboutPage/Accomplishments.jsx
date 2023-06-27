@@ -2,7 +2,7 @@
 
 const Accomplishments = () => {
     return(
-        <div className="bg-off-white pb-[7%] w-full">
+        <div className="bg-off-white md:pb-[7%] pb-[20%] w-full">
             <p className={`text-black ${Styles.Body} pt-[8%] w-full flex justify-center`}>These are some of my</p>
             <p className={`text-black ${Styles.SectionSubHeader} pt-[1%] w-full flex justify-center`}>Accomplishments</p>
             <div className={`text-black ${Styles.Body} pt-[5%] justify-center w-full flex`}>
