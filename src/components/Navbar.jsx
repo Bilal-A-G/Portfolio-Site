@@ -18,7 +18,7 @@ const Navbar = () => {
     
     return(
         <>
-            <div className={`w-full justify-end sm:hidden ${!open ? "hidden" : "flex"} absolute`}>
+            <div className={`w-full justify-end md:hidden ${!open ? "hidden" : "flex"} absolute`}>
                 <div className="w-full h-screen fixed bg-black z-20 opacity-80"/>
                 <div className="w-3/4 bg-off-white z-20 px-[2%] mt-[2%] mr-[2%] rounded-md">
                     <div className="flex justify-start pt-[5%]">
@@ -35,21 +35,20 @@ const Navbar = () => {
                                     <NavbarLink text={name} select={true} props={"w-full py-1 px-2"} group={"group/top"} extras={<div className="ml-[10px] mt-[7px] w-[8px] h-[8px] bg-[url('DropdownInactive.svg')] bg-no-repeat bg-center bg-cover"></div>}/>
                                     {children.map(({name, path, bottom, image}) => 
                                         <NavbarLink text={name} link={path} select={true} props={`w-full w-[200px] px-[20px] py-[5px] ${Styles.SmallBody}`} 
-                                                    extras={<div className={`ml-[14px] mt-[2px] xl:h-6 xl:w-6 sm:h-[2px] 
-                                                    sm:w-[2px] rounded-full ${image} bg-center bg-cover`}/>}/>)
+                                                    extras={<div className={`ml-[14px] mt-[2px] xl:h-6 xl:w-6 rounded-full ${image} bg-center bg-cover`}/>}/>)
                                     }
                                 </>
                         )}
                     </div>
                 </div>
             </div>
-            <nav className="bg-off-white flex w-full xl:h-[50px] sm:h-[40px]">
+            <nav className="bg-off-white flex w-full xl:h-[50px] md:h-[40px]">
                 <div className="h-full w-1/4">
                     <div className={`flex justify-center ${Styles.Body} text-black font-semibold`}>
                         <NavbarLink select={false} extras={<p>Bilal A-G</p>} link={"/"} props={"py-2"}/>
                     </div>
                 </div>
-                <div className={`w-3/4 ml-[15%] ${Styles.Subtitle} sm:flex hidden font-semibold`}>
+                <div className={`w-3/4 ml-[15%] ${Styles.Subtitle} md:flex hidden font-semibold`}>
                     {Pages.map(({path, component, name, hasChildren, children}) =>
                         !hasChildren ?
                             <NavbarLink text={name} select={true} props={"h-full px-3 py-3"} link={path}/>
@@ -58,13 +57,13 @@ const Navbar = () => {
                                         extras={<>
                                             <div className={"bg-[url('DropdownInactive.svg')] group-hover/top:bg-[url('DropdownActive.svg')] w-3 h-3 mt-[10%] ml-[3px] bg-no-repeat"}/>
                                             <div className={"mt-[41.1%] w-[200px] bg-off-white absolute invisible group-hover/top:visible hover:!visible z-20 rounded-b-md"}>
-                                                {children.map(({name, path, bottom, image}) => <NavbarLink text={name} link={path} select={true} props={!bottom ? "w-full w-[200px] px-[10px] py-[5px]" : "w-full w-[200px] px-[10px] py-[5px] rounded-b-md"} extras={<div className={`ml-[14px] mt-[2px] xl:h-6 xl:w-6 sm:h-[2px] sm:w-[2px] rounded-full ${image} bg-center bg-cover`}/>}/>)}
+                                                {children.map(({name, path, bottom, image}) => <NavbarLink text={name} link={path} select={true} props={!bottom ? "w-full w-[200px] px-[10px] py-[5px]" : "w-full w-[200px] px-[10px] py-[5px] rounded-b-md"} extras={<div className={`ml-[14px] mt-[2px] xl:h-6 xl:w-6 h-[2px] w-[2px] rounded-full ${image} bg-center bg-cover`}/>}/>)}
                                             </div>
                                         </>
                                         }/>
                     )}
                 </div>
-                <div className="w-3/4 sm:hidden block grid place-items-center justify-end px-[8%]">
+                <div className="w-3/4 md:hidden block grid place-items-center justify-end px-[8%]">
                     <button onClick={() => setOpen(true)} className="w-[20px] h-[20px] bg-[url('Hamburger.svg')] bg-contain bg-no-repeat bg-center"/>
                 </div>
             </nav>

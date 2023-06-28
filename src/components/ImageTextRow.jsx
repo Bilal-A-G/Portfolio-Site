@@ -42,7 +42,7 @@ const CombinedText = ({leftAlign, subtitle, title, extras}) => {
 
 const Image = ({leftAlign, image}) => {
     return(
-        <div className={`${leftAlign ? "md:ml-[5%] ml-[0%]" : "md:ml-[0px] ml-[0%]"} mt-[4%] ${leftAlign ? "md:w-[50%] w-[0%]" : "md:w-[45%] w-[80%]"} bg-black md:rounded-[40px] rounded-[10px] flex grid place-items-center md:py-[3%] py-[5%]`}>
+        <div className={`${leftAlign ? "md:ml-[5%] ml-[0%]" : "md:ml-[0px] ml-[0%]"} mt-[4%] ${leftAlign ? "md:w-[50%] w-[0%]" : "md:w-[45%] sm:w-[60%] w-[80%]"} bg-black rounded-[40px] flex grid place-items-center md:py-[3%] py-[5%]`}>
             <div>
                 <ImageWithBorder image={image} style={Styles.MediumImage}/>
             </div>
@@ -66,7 +66,7 @@ const ImageTextRow = ({leftAlign, subtitle, title, image, extras, id}) => {
                     </>
                 }
             </div>
-            <div id={id} className="w-full bg-off-white pb-[5%] pt-[5%] md:hidden block">
+            <div id={id + "mobile"} className="w-full bg-off-white pb-[5%] pt-[5%] md:hidden block">
                 <TextTop leftAlign={false} title={title} subtitle={subtitle} extras={extras}/>
                 <div className="w-full flex justify-center">
                     <Image leftAlign={false} image={image}/>

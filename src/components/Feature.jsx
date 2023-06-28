@@ -13,7 +13,7 @@ const Feature = ({name, description, image, odd, underline}) => {
                               <div className={`${Styles.Body} pt-[8%] md:pl-[30%] pl-[10%]`}>{description}</div>
                           </div>
                       </div>
-                      <div className="w-1/2 justify-center flex grid place-items-center md:ml-[0%] ml-[40%] md:pt-[0%] pt-[10%]">
+                      <div className="w-1/2 justify-center flex grid place-items-center md:ml-[0%] ml-[25%] md:pt-[0%] pt-[10%]">
                         <ImageWithBorder image={image} style={Styles.MediumImage}/>
                       </div>
                   </div>
@@ -32,7 +32,6 @@ const Feature = ({name, description, image, odd, underline}) => {
                           </div>
                       </div>
                   </div>
-                  
                   <div className="md:hidden block pt-[3%]">
                       <div className="w-1/2 text-white">
                           <p className={`${Styles.SubSectionHeader} font-semibold flex w-full pt-[10%] md:pr-[30%] md:ml-[0%] ml-[60%]`}>{name}</p>
