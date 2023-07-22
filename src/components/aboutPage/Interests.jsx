@@ -23,7 +23,7 @@ const Interests = () => {
                       <div className="w-[110px] h-[90px] bg-[url('Atom.svg')] bg-cover bg-center bg-no-repeat mt-[10px] md:ml-[0%] ml-[15%]"/>
                       <p className="pt-[25px] md:w-[140px] w-[150px] md:ml-[5px] ml-[20%]">Science</p>
                   </div>
-                  <div>
+                  <div className="mt-[21px]">
                       <div className="w-[110px] h-[90px] bg-[url('Reading.svg')] bg-cover bg-center bg-no-repeat"/>
                       <p className="pt-[25px] w-[50px] ml-[10px]">Reading</p>
                   </div>

@@ -3,7 +3,7 @@
 
 const SectionHeader = ({subtitle, title}) => {
     return(
-        <div className="md:pb-[5%] pb-[8%] w-full bg-black">
+        <div className="md:pb-[5%] pb-[15%] w-full bg-black">
             <p className={`text-white ${Styles.Body} pt-[6%] md:w-1/2 w-full flex justify-center`}>{subtitle}</p>
             <p className={`text-white ${Styles.SectionHeader} md:w-1/2 w-full flex justify-center`}>{title}</p>
             <div className="md:w-1/2 w-3/4 justify-start flex">

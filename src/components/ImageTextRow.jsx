@@ -66,7 +66,7 @@ const ImageTextRow = ({leftAlign, subtitle, title, image, extras, id}) => {
                     </>
                 }
             </div>
-            <div id={id + "mobile"} className="w-full bg-off-white pb-[5%] pt-[5%] md:hidden block">
+            <div id={id + "mobile"} className="w-full bg-off-white pb-[15%] pt-[5%] md:hidden block">
                 <TextTop leftAlign={false} title={title} subtitle={subtitle} extras={extras}/>
                 <div className="w-full flex justify-center">
                     <Image leftAlign={false} image={image}/>
