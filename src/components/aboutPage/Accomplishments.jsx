@@ -6,7 +6,7 @@ const Accomplishments = () => {
             <p className={`text-black ${Styles.Body} pt-[8%] w-full flex justify-center`}>These are some of my</p>
             <p className={`text-black ${Styles.SectionSubHeader} pt-[1%] w-full flex justify-center`}>Accomplishments</p>
             <div className="w-full flex justify-center pt-[2%]">
-                <div>
+                <div className= "px-[15%]">
                     <div className={`text-black ${Styles.Body} pt-[5%] justify-start w-full flex`}>
                         <p>o</p><p className="pl-[5%]">Vice President of the OTU Game Programming Club</p>
                     </div>

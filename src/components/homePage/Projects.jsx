@@ -19,7 +19,7 @@ const Projects = () => {
                             {description}
                         </p>
                         <div className="w-full flex justify-center">
-                            <Button text={"Learn More"} link={path} width={"px-[20%]"}/>
+                            <Button text={"Learn More"} link={path} width={"md:w-[70%] w-[40%]"}/>
                         </div>
                         <div className={`w-full md:hidden ${bottom ? "hidden" : "flex"} justify-center pt-[20%]`}>
                             <div className="bg-white h-[1px] w-full absolute"/>

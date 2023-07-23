@@ -5,7 +5,7 @@ const ContactForm = () => {
         <div className="w-full pb-[15%] bg-off-white">
             <p className={`w-full flex justify-center pt-[7%] ${Styles.SectionSubHeader}`}>Contact Form</p>
             <div className="w-full flex justify-center">
-                <form className="md:px-[7%] px-[2%] py-[3%] mt-[5%] md:border-[2px] border-[1px] lg:rounded-[20px] sm:rounded-[10px] rounded-[5px] border-black">
+                <form className="md:px-[7%] px-[2%] py-[3%] mt-[5%] md:border-[2px] border-[0px] lg:rounded-[20px] sm:rounded-[10px] rounded-[5px] border-black">
                     <div className={`pl-[4%] flex ${Styles.Body}`}>
                         <label htmlFor="name">Name:</label>
                         <div className="ml-[4%] w-[50%] h-[2%] md:border-[2px] border-[1px] rounded-full border-black justify-center flex">
@@ -25,7 +25,7 @@ const ContactForm = () => {
                         </div>
                     </div>
                     <div className="w-full flex justify-center">
-                        <div className={`md:w-[15%] w-[30%] h-[4%] rounded-full bg-dark-red mt-[7%] justify-center flex text-white ${Styles.Button}`}>
+                        <div className={`md:w-[25%] w-[30%] h-[4%] rounded-full bg-dark-red mt-[7%] py-[0.5%] justify-center flex text-white ${Styles.Button}`}>
                             <input type={"submit"} className="cursor-pointer w-full h-full"></input>
                         </div>
                     </div>

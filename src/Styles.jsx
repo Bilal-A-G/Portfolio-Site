@@ -3,7 +3,7 @@
     LargeImage :
         {
             outerSize: "2xl:w-[690px] 2xl:h-[690px] xl:w-[575px] xl:h-[575px] " +
-                "lg:w-[460px] lg:h-[460px] md:w-[345px] md:h-[345px] sm:w-[455px] sm:h-[455px] w-[400px] h-[400px]",
+                "lg:w-[460px] lg:h-[460px] md:w-[345px] md:h-[345px] sm:w-[455px] sm:h-[455px] w-[350px] h-[350px]",
             innerSize : "w-[95%] h-[95%]"
         },
     MediumImage :
