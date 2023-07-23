@@ -31,11 +31,11 @@
     Button :
         "2xl:text-[17px] xl:text-[14px] lg:text-[11px] md:text-[12px] text-[15px] font-black",
     Body :
-        "2xl:text-[17px] xl:text-[14px] lg:text-[11px] md:text-[12px] text-[15px]",
+        "2xl:text-[17px] xl:text-[14px] lg:text-[11px] md:text-[13px] text-[15px]",
     SmallBody :
         "2xl:text-[12px] xl:text-[14px] lg:text-[11px] md:text-[10px] text-[12px]",
     Subtitle:
-        "2xl:text-[14px] xl:text-[12px] lg:text-[8px] md:text-[13px] text-[11px] font-regular",
+        "2xl:text-[14px] xl:text-[12px] lg:text-[8px] md:text-[12px] text-[11px] font-regular",
     
 }
 

@@ -6,7 +6,7 @@ const Interests = () => {
           <p className={`justify-center ${Styles.Body} flex pt-[7%]`}>I have several </p>
           <p className={`justify-center ${Styles.SectionSubHeader} flex mt-[1%]`}>Interests</p>
           <div className={`w-full justify-center flex font-semibold text-white ${Styles.SubSectionHeader}`}>
-              <div className="grid auto-cols-max md:grid-flow-col gap-10 place-items-center justify-center pt-[5%]">
+              <div className="grid md:grid-cols-5 auto-rows-max md:grid-flow-col gap-10 place-items-center justify-center pt-[5%]">
                   <div className="mt-[20px]">
                       <div className="w-[110px] h-[90px] bg-[url('Chess.svg')] bg-cover bg-center bg-no-repeat mt-[5px]"/>
                       <p className="pt-[25px] md:w-[130px] md:pl-[15px] pl-[20%]">Chess</p>
