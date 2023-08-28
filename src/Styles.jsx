@@ -15,7 +15,7 @@
     SmallImage :
         {
             outerSize: "2xl:w-[280px] 2xl:h-[280px] xl:w-[233px] xl:h-[233px] " +
-                "lg:w-[186px] lg:h-[186px] md:w-[139px] md:h-[139px] md:w-[200px] md:h-[200px] w-[190px] h-[190px]",
+                "lg:w-[186px] lg:h-[186px] sm:w-[200px] sm:h-[200px] w-[190px] h-[190px]",
             innerSize : "w-[85%] h-[85%]"
         },
     
@@ -29,13 +29,13 @@
     SubSectionHeader :
         "2xl-[32px] xl:text-[27px] lg:text-[21px] md:text-[20px] text-[20px]",
     Button :
-        "2xl:text-[17px] xl:text-[14px] lg:text-[11px] md:text-[12px] text-[15px] font-black",
+        "2xl:text-[17px] xl:text-[14px] lg:text-[15px] md:text-[12px] text-[15px] font-black",
     Body :
-        "2xl:text-[17px] xl:text-[14px] lg:text-[11px] md:text-[13px] text-[15px]",
+        "2xl:text-[17px] xl:text-[17px] lg:text-[15px] md:text-[13px] text-[15px]",
     SmallBody :
-        "2xl:text-[12px] xl:text-[14px] lg:text-[11px] md:text-[10px] text-[12px]",
+        "2xl:text-[12px] xl:text-[14px] lg:text-[12px] md:text-[10px] text-[12px]",
     Subtitle:
-        "2xl:text-[14px] xl:text-[12px] lg:text-[8px] md:text-[12px] text-[11px] font-regular",
+        "2xl:text-[14px] xl:text-[13px] lg:text-[11px] md:text-[12px] text-[11px] font-regular",
     
 }
 
