@@ -1,21 +1,38 @@
 ﻿import Styles from "../../Styles.jsx";
+import React, {useRef} from "react";
+import emailjs from "@emailjs/browser"
 
 const ContactForm = () => {
+    
+    const form = useRef();
+
+    const SubmitForm = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_uw9s5am', 'template_0vjo14k', form.current, 'ZRibGyEB94DNxM86U')
+            .then((result) => {
+                console.log(result.text);
+                e.target.reset();
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
+    
     return(
         <div className="w-full pb-[15%] bg-off-white">
             <p className={`w-full flex justify-center pt-[7%] ${Styles.SectionSubHeader}`}>Contact Form</p>
             <div className="w-full flex justify-center">
-                <form className="md:px-[7%] px-[2%] py-[3%] mt-[5%] md:border-[2px] border-[0px] lg:rounded-[20px] sm:rounded-[10px] rounded-[5px] border-black">
+                <form className="md:px-[7%] px-[2%] py-[3%] mt-[5%] md:border-[2px] border-[0px] lg:rounded-[20px] sm:rounded-[10px] rounded-[5px] border-black" onSubmit={SubmitForm} ref={form}>
                     <div className={`pl-[4%] flex ${Styles.Body}`}>
-                        <label htmlFor="name">Name:</label>
+                        <label htmlFor="user_name">Name:</label>
                         <div className="ml-[4%] w-[50%] h-[2%] md:border-[2px] border-[1px] rounded-full border-black justify-center flex">
-                            <input id="name" placeholder="Your name here" name="name" type={"text"} required={true} className={`bg-transparent rounded-full w-full px-[5%] ${Styles.Body}`}/>
+                            <input id="user_name" placeholder="Your name here" name="user_name" type={"text"} required={true} className={`bg-transparent rounded-full w-full px-[5%] ${Styles.Body}`}/>
                         </div>
                     </div>
                     <div className={`pt-[3%] pl-[4%] flex ${Styles.Body}`}>
-                        <label htmlFor="email">Email:</label>
+                        <label htmlFor="user_email">Email:</label>
                         <div className="ml-[4%] w-[50%] h-[2%] md:border-[2px] border-[1px] rounded-full border-black flex justify-center">
-                            <input id="email" placeholder="Your email here" name="email" type={"email"} required={true} className={`bg-transparent rounded-full w-full px-[5%] ${Styles.Body}`}/>
+                            <input id="user_email" placeholder="Your email here" name="user_email" type={"email"} required={true} className={`bg-transparent rounded-full w-full px-[5%] ${Styles.Body}`}/>
                         </div>
                     </div>
                     <div className={`pt-[3%] pl-[1%] flex ${Styles.Body}`}>
