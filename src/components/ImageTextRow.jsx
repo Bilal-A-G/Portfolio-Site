@@ -1,5 +1,6 @@
 ﻿import ImageWithBorder from "./ImageWithBorder.jsx";
 import Styles from "../Styles.jsx";
+import FadeIn from "./FadeIn.jsx";
 
 const TextTop = ({leftAlign, subtitle, title, extras}) => {
     return(
@@ -18,7 +19,9 @@ const TextBottom = ({leftAlign, subtitle, title, extras}) => {
     return (
         <div className={`md:w-1/2 w-full text-black ${leftAlign ? "md:pl-[10%] pl-[0%]" : "md:pl-[15%] pl-[0%]"}`}>
             <div className="md:block flex justify-center w-full">
-                {extras}
+                <FadeIn>
+                    {extras}
+                </FadeIn>
             </div>
         </div>
     );
@@ -28,13 +31,19 @@ const CombinedText = ({leftAlign, subtitle, title, extras}) => {
     return(
         <div className={`md:w-1/2 2-full text-black mt-[8%] ${leftAlign ? "md:pl-[10%] pl-[0%]" : "md:pl-[15%] pl-[0%]"}`}>
             <div className="md:block flex justify-center w-full">
-                <p className={`${Styles.Body}`}>{subtitle}</p>
+                <FadeIn>
+                    <p className={`${Styles.Body}`}>{subtitle}</p>
+                </FadeIn>
             </div>
             <div className="md:block flex justify-center w-full">
-                <p className={`${Styles.SectionSubHeader} mt-[1%]`}>{title}</p>
+                <FadeIn>
+                    <p className={`${Styles.SectionSubHeader} mt-[1%]`}>{title}</p>
+                </FadeIn>
             </div>
             <div className="md:block flex justify-center w-full">
-                {extras}
+                <FadeIn>
+                    {extras}
+                </FadeIn>
             </div>
         </div>
     );
@@ -53,25 +62,27 @@ const Image = ({leftAlign, image}) => {
 const ImageTextRow = ({leftAlign, subtitle, title, image, extras, id}) => {
     return(
         <>
-            <div id={id} className="w-full bg-off-white pb-[5%] md:flex hidden">
+            <div id={id} className={"bg-off-white"}>
                 {leftAlign ?
-                    <>
-                        <Image leftAlign={leftAlign} image={image}/>
-                        <CombinedText leftAlign={leftAlign} title={title} subtitle={subtitle} extras={extras}/>
-                    </>
+                        <div className={"w-full pb-[5%] md:flex hidden"}>
+                            <Image leftAlign={leftAlign} image={image}/>
+                            <CombinedText leftAlign={leftAlign} title={title} subtitle={subtitle} extras={extras}/>
+                        </div>
                     :
-                    <>
-                        <CombinedText leftAlign={leftAlign} title={title} subtitle={subtitle} extras={extras}/>
-                        <Image leftAlign={leftAlign} image={image}/>
-                    </>
+                        <div className={"w-full pb-[5%] md:flex hidden"}>
+                            <CombinedText leftAlign={leftAlign} title={title} subtitle={subtitle} extras={extras}/>
+                            <Image leftAlign={leftAlign} image={image}/>
+                        </div>
                 }
             </div>
             <div id={id + "mobile"} className="w-full bg-off-white pb-[15%] pt-[5%] md:hidden block">
-                <TextTop leftAlign={false} title={title} subtitle={subtitle} extras={extras}/>
-                <div className="w-full flex justify-center">
-                    <Image leftAlign={false} image={image}/>
-                </div>
-                <TextBottom leftAlign={false} title={title} subtitle={subtitle} extras={extras}/>
+                <FadeIn>
+                    <TextTop leftAlign={false} title={title} subtitle={subtitle} extras={extras}/>
+                    <div className="w-full flex justify-center">
+                        <Image leftAlign={false} image={image}/>
+                    </div>
+                    <TextBottom leftAlign={false} title={title} subtitle={subtitle} extras={extras}/>
+                </FadeIn>
             </div>
         </>
     );
