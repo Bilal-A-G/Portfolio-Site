@@ -13,9 +13,7 @@ const Contact = () => {
           </FadeIn>
           <FadeIn>
               <p className={`w-full flex justify-center ${Styles.Body} pt-[4%] text-center pb-[4%] md:px-[40%] px-[10%]`}>For any business inquiries, questions, or feedback</p>
-              <div className="w-full flex justify-center md:pt-[0%] pt-[10%]">
-                  <Button link={"/contact"} text={"Contact Form"} width={"md:px-[5%] px-[5%]"}/>
-              </div>
+              <Button link={"/contact"} text={"Contact Form"} width={"md:px-[5%] px-[5%]"} className={`w-full flex justify-center md:pt-[0%] pt-[10%]`}/>
           </FadeIn>
       </div>  
     );

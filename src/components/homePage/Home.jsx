@@ -20,9 +20,7 @@ const Home = () => {
                           <div className='h-[40px] w-[40px] md:h-[20px] md:w-[20px] lg:h-[30px] lg:w-[30px] 2xl:h-[50px] 2xl:w-[50px] bg-[url("Unity.svg")] bg-cover bg-center'/>
                           <div className='h-[40px] w-[40px] md:h-[20px] md:w-[20px] lg:h-[30px] lg:w-[30px] 2xl:h-[50px] 2xl:w-[50px] bg-[url("Unreal.svg")] bg-cover bg-center'/>
                       </div>
-                      <div className="md:w-1/2 w-full flex md:justify-start justify-center">
-                          <Button text={"Read More"} link={"/about"} width={"md:w-[80%] w-[30%]"}/>
-                      </div>
+                      <Button text={"Read More"} link={"/about"} width={"md:w-[80%] w-[30%]"} className={`md:w-1/2 w-full flex md:justify-start justify-center`}/>
                   </div>
               }/>
           <Projects/>

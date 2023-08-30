@@ -24,9 +24,7 @@ const Projects = () => {
                             <p className={`flex justify-center text-center px-[10%] ${Styles.Body} pt-[10%] pb-[20%]`}>
                                 {description}
                             </p>
-                            <div className="w-full flex justify-center">
-                                <Button text={"Learn More"} link={path} width={"md:w-[70%] w-[40%]"}/>
-                            </div>
+                            <Button text={"Learn More"} link={path} width={"md:w-[70%] w-[40%]"} className={`w-full flex justify-center`}/>
                             <div className={`w-full md:hidden ${bottom ? "hidden" : "flex"} justify-center pt-[20%]`}>
                                 <div className="bg-white h-[1px] w-full absolute"/>
                             </div>
