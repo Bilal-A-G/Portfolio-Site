@@ -8,7 +8,7 @@ const About = () => {
     return(
       <div>
           <SectionHeader title="About Me" subtitle="Here's more information"/>
-          <ImageTextRow leftAlign={false} title="Description" subtitle="Here's a brief" image="bg-[url('Placeholder.png')]" 
+          <ImageTextRow leftAlign={false} title="Description" subtitle="Here's a brief" image="bg-[url('Me2.JPG')]" 
                         extras={
                             <div className={`${Styles.Body} text-black w-full md:pr-[30%] md:px-[0%] px-[20%]`}>
                                 <p className="pt-[15%]">
