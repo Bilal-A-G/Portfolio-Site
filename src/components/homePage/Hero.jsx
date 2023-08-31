@@ -2,6 +2,7 @@
 import Styles from "../../Styles.jsx";
 import Button from "../Button.jsx";
 import FadeIn from "../FadeIn.jsx";
+import Moon from "../Moon";
 
 const Hero = () => {
     return(
@@ -22,7 +23,12 @@ const Hero = () => {
                         </FadeIn>
                     </div>
                     <div className="w-2/3 grid place-items-start grid flex md:mt-[2%] mt-[0%] md:pt-[0%] pt-[10%] md:pl-[0%] sm:pl-[15%] pl-[5%]">
-                        <ImageWithBorder image={"bg-[url('MoonTest.png')]"} style={Styles.LargeImage}/>
+                        <FadeIn>
+                            <div className={"2xl:w-[690px] 2xl:h-[690px] xl:w-[575px] xl:h-[575px] " +
+                                "lg:w-[460px] lg:h-[460px] md:w-[345px] md:h-[345px] sm:w-[455px] sm:h-[455px] w-[350px] h-[350px] pr-[20px] pb-[20px]"}>
+                                <Moon/>
+                            </div>
+                        </FadeIn>
                     </div>
                     <div className="w-full md:hidden flex">
                         <div className="pl-[10%] pt-[5%] w-full text-white">
@@ -37,7 +43,7 @@ const Hero = () => {
                             </FadeIn>
                             <FadeIn>
                                 <Button link={"#about"} width={"w-[35%]"} extras={"py-[1%] md:block hidden"} text={"About Me"} className={`pt-[10%] pb-[15%] w-full flex justify-start`}/>
-                                <Button link={"#aboutmobile"} width={"w-[35%]"} extras={"py-[1%] md:hidden block"} text={"About Me"} className={`pt-[10%] pb-[15%] w-full flex justify-start`}/>
+                                <Button link={"#aboutmobile"} width={"w-[35%]"} extras={"py-[1%] md:hidden block"} text={"About Me"} className={`pt-[8%] pb-[15%] w-full flex justify-start`}/>
                             </FadeIn>
                         </div>
                     </div>
