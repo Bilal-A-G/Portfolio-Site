@@ -19,7 +19,7 @@ const Feature = ({name, description, image, odd, underline}) => {
                           </FadeIn>
                       </div>
                       <div className={`w-1/2 justify-center flex grid place-items-center md:ml-[0%] ml-[25%] md:pt-[0%] pt-[10%] ${!underline ? "md:pb-[0%] pb-[10%]" : ""}`}>
-                        <ImageWithBorder image={image} style={Styles.MediumImage}/>
+                        <ImageWithBorder image={image} style={Styles.MediumImage} sphere={false}/>
                       </div>
                   </div>
                   <FadeIn>

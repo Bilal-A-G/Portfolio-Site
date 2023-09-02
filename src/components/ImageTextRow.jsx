@@ -49,29 +49,29 @@ const CombinedText = ({leftAlign, subtitle, title, extras}) => {
     );
 }
 
-const Image = ({leftAlign, image}) => {
+const Image = ({leftAlign, image, sphere}) => {
     return(
         <div className={`${leftAlign ? "md:ml-[5%] ml-[0%]" : "md:ml-[0px] ml-[0%]"} mt-[4%] ${leftAlign ? "md:w-[50%] w-[0%]" : "md:w-[45%] sm:w-[60%] w-[80%]"} bg-black rounded-[40px] flex grid place-items-center md:py-[3%] py-[5%]`}>
             <div>
-                <ImageWithBorder image={image} style={Styles.MediumImage}/>
+                <ImageWithBorder image={image} style={Styles.MediumImage} sphere={sphere}/>
             </div>
         </div>
     );
 }
 
-const ImageTextRow = ({leftAlign, subtitle, title, image, extras, id}) => {
+const ImageTextRow = ({leftAlign, subtitle, title, image, extras, id, sphere}) => {
     return(
         <>
             <div id={id} className={"bg-off-white"}>
                 {leftAlign ?
                         <div className={"w-full pb-[5%] md:flex hidden"}>
-                            <Image leftAlign={leftAlign} image={image}/>
+                            <Image leftAlign={leftAlign} image={image} sphere={sphere}/>
                             <CombinedText leftAlign={leftAlign} title={title} subtitle={subtitle} extras={extras}/>
                         </div>
                     :
                         <div className={"w-full pb-[5%] md:flex hidden"}>
                             <CombinedText leftAlign={leftAlign} title={title} subtitle={subtitle} extras={extras}/>
-                            <Image leftAlign={leftAlign} image={image}/>
+                            <Image leftAlign={leftAlign} image={image} sphere={sphere}/>
                         </div>
                 }
             </div>
@@ -79,7 +79,7 @@ const ImageTextRow = ({leftAlign, subtitle, title, image, extras, id}) => {
                 <FadeIn>
                     <TextTop leftAlign={false} title={title} subtitle={subtitle} extras={extras}/>
                     <div className="w-full flex justify-center">
-                        <Image leftAlign={false} image={image}/>
+                        <Image leftAlign={false} image={image} sphere={sphere}/>
                     </div>
                     <TextBottom leftAlign={false} title={title} subtitle={subtitle} extras={extras}/>
                 </FadeIn>

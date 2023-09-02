@@ -8,7 +8,7 @@ const Project = ({name, image, description, features, github, itch, trello}) => 
     return(
       <div>
           <SectionHeader title={name} subtitle={"Here's more information about"}/>
-          <ImageTextRow title={"Description"} subtitle={"Here's a short"} image={image} leftAlign={true} 
+          <ImageTextRow title={"Description"} subtitle={"Here's a short"} image={image} leftAlign={true}  sphere={true}
                         extras={<div className={`md:pr-[20%] md:px-[0%] px-[20%] md:pt-[10%] pt-[5%] ${Styles.Body}`}>
                             {description}
                         </div>}/>

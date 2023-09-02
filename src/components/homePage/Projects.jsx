@@ -19,7 +19,7 @@ const Projects = () => {
                         <div className="text-white w-[300px]">
                             <p className={`text-white ${Styles.SubSectionHeader} mb-[10%] justify-center flex`}>{name}</p>
                             <div className="w-full flex justify-center">
-                                <ImageWithBorder image={image} style={Styles.SmallImage}/>
+                                <ImageWithBorder image={image} style={Styles.SmallImage} sphere={true}/>
                             </div>
                             <p className={`flex justify-center text-center px-[10%] ${Styles.Body} pt-[10%] pb-[20%]`}>
                                 {description}

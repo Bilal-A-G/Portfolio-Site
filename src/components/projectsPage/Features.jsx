@@ -14,8 +14,8 @@ const Features = ({features}) => {
           <FadeIn>
               <div className="mt-[2%] w-[75%] bg-white md:h-[2px] h-[1px] ml-[5%] mb-[1%]"/>
           </FadeIn>
-          {features.map(({name, description, odd, underline}) =>
-              <Feature image={"bg-[url('Placeholder.png')]"} name={name} description={description} odd={odd} underline={underline}/>
+          {features.map(({name, description, odd, underline, image}) =>
+              <Feature image={image} name={name} description={description} odd={odd} underline={underline}/>
           )}
       </div>  
     );

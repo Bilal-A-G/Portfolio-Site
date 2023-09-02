@@ -1,4 +1,6 @@
-﻿const Projects = [
+﻿import Styles from "./Styles.jsx";
+
+const Projects = [
     {name : "Project Mortalis", path: "/project-mortalis", bottom: false, image : "bg-[url(ProjectMortalis.png)]", description : 
             "A long-term, post apocalyptic, first person shooter project", 
         longDescription: 
@@ -24,7 +26,7 @@
                         <div className="flex"><p>o</p> <p className="pl-[6%]">Particles</p></div>
                         <div className="flex"><p>o</p> <p className="pl-[6%]">Weapon Sway (based on mouse position and move direction)</p></div>
                         <div className="flex"><p>o</p> <p className="pl-[6%]">Animations (procedural and keyframed)</p></div>
-                    </div>, odd : true, underline : true}, 
+                    </div>, odd : true, underline : true, image : "bg-[url(Gunplay.gif)]"}, 
                 {name : "Solid Architecture", 
                 description : 
                     <div>
@@ -40,8 +42,7 @@
                             Furthermore, most code in the project is highly reusable and easy to extend. Most of this
                             was implemented via the W_I_Zr_Ds package
                         </div>
-
-                    </div>, odd : false, underline : true}, 
+                    </div>, odd : false, underline : true, image : "bg-[url(Architecture.png)]"}, 
                 {name : "Long Term Support", 
                 description : 
                     <div>
@@ -51,7 +52,7 @@
                         <div className="pt-[20px]">
                             I am committed to developing it until completion, no matter how long it takes
                         </div>
-                    </div>, odd : true, underline : false}],
+                    </div>, odd : true, underline : false, image : "bg-[url(LTS.png)]"}],
         github: "https://github.com/Bilal-A-G/Project-Mortalis", itch : "https://bilal-a-g.itch.io/project-mortalis", trello : ""
     },
     
@@ -82,7 +83,7 @@
                             Furthermore, I had to recreate the entire coordinate transform pipeline from scratch,
                             even needing to create custom vector and matrix types and define operations with them
                         </div>
-                    </div>, odd : true, underline : true}, 
+                    </div>, odd : true, underline : true, image : "bg-[url(3DGraphics.gif)]"}, 
                 {name : "Data Oriented ECS",
                 description :
                     <div>
@@ -108,7 +109,7 @@
                         <div className="pt-[20px] pb-[40px]">
                             A byproduct of this architecture is that all component lookups have O(1) time complexity
                         </div>
-                    </div> , odd : false, underline : true}, 
+                    </div> , odd : false, underline : true, image : "bg-[url(ECS.png)]"}, 
                 {name : "Physics",
                 description :
                     <div>
@@ -121,7 +122,7 @@
                             The physics system uses simplectic Euler integration to turn acceleration into a position change,
                             and impulse forces to resolve collisions
                         </div>
-                    </div>, odd : true, underline : false}],
+                    </div>, odd : true, underline : false, image : "bg-[url(Physics.gif)]"}],
         github: "https://github.com/Bilal-A-G/NEXT-Submission-2023", itch : "", trello : "https://trello.com/b/RNW4WbNu/ubisoft-next-planning"
     },
     
@@ -151,14 +152,14 @@
                             each layer with a higher frequency/scale than the last, but with decreasing amplitude/strength.
                             This creates a detailed, but coherent heightmap
                         </div>
-                    </div>, odd : true, underline : true}, 
+                    </div>, odd : true, underline : true, image : "bg-[url(PerlinNoise.gif)]"}, 
                 {name : "Dynamic Tessellation",
                 description :
                     <div>
                         This project also features a dynamic tesselation system via tesselation shaders that subdivides
                         the terrain based on how close the player is to it, this allows for very detailed terrain 
                         with little to no lag
-                    </div>, odd : false, underline : true}, 
+                    </div>, odd : false, underline : true, image : "bg-[url(Tesselation.gif)]"}, 
                 {name : "Chunk System",
                 description :
                     <div>
@@ -168,7 +169,7 @@
                         <div className="pt-[20px]">
                             This allows for infinite terrain, while reducing lag and memory usage
                         </div>
-                    </div>, odd : true, underline : false}],
+                    </div>, odd : true, underline : false, image : "bg-[url(Chunks.gif)]"}],
         github: "https://github.com/Bilal-A-G/Procedural-Terrain", itch : "https://bilal-a-g.itch.io/procedurally-generated-terrain", trello : ""
     }
 ]
