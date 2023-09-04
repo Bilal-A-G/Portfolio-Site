@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "prebuild" : "mv node_modules/@react-three/drei/src/index.js node_modules/@react-three/drei",
+    "prebuild" : "if node_modules/@react-three/drei/src/index.js ; then mv node_modules/@react-three/drei/src/index.js node_modules/@react-three/drei ; else echo no movement necessary! ; fi",
     "build": "vite build",
     "dev": "vite",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
