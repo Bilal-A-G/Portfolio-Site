@@ -3,12 +3,13 @@ import ImageTextRow from "../ImageTextRow.jsx";
 import Interests from "./Interests.jsx";
 import Accomplishments from "./Accomplishments.jsx";
 import Styles from "../../Styles.jsx";
+import Mejpg from "/Me.JPG?url"
 
 const About = () => {
     return(
       <div>
           <SectionHeader title="About Me" subtitle="Here's more information"/>
-          <ImageTextRow leftAlign={false} title="Description" subtitle="Here's a brief" image="bg-[url('./Me2.JPG')]" sphere={true}
+          <ImageTextRow leftAlign={false} title="Description" subtitle="Here's a brief" image={`bg-[url('${Mejpg}')]`} sphere={true}
                         extras={
                             <div className={`${Styles.Body} text-black w-full md:pr-[30%] md:px-[0%] px-[20%]`}>
                                 <p className="pt-[15%]">
