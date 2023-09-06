@@ -136,7 +136,7 @@ const Projects = [
                     group project, named Project Ganymede, for my Intermediate CG course
                 </p>
                 <p className="pt-[30px]">
-                    It has been seperated out into it's own project so I can continue it's development in the future, also because
+                    It has been separated out into it's own project so I can continue it's development in the future, also because
                     the terrain generator in Project Ganymede also procedurally generates colliders, which slows the game down a lot
                 </p>
                 <p className="pt-[30px] underline decoration-dark-red"><a href="https://github.com/Bilal-A-G/Project-Ganymede" target="_blank">Project Ganymede on Github</a></p>
