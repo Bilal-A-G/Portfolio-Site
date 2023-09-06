@@ -1,6 +1,7 @@
 ﻿import Button from "../Button.jsx";
 import Styles from "../../Styles.jsx";
 import FadeIn from "../FadeIn.jsx";
+import Resources from "../../Resources.jsx";
 
 const ImportantLinks = ({githubUrl, itchUrl, trelloUrl}) => {
     return(
@@ -16,7 +17,7 @@ const ImportantLinks = ({githubUrl, itchUrl, trelloUrl}) => {
                     <div className="grid auto-cols-max grid-flow-col md:gap-[100%] gap-[110%] place-items-center justify-center mt-[8%]">
                         {githubUrl !== "" ?
                             <div className={"grid auto-cols-max grid-flow-row gap-[15%] place-items-center justify-center"}>
-                                <div className="xl:w-[90px] xl:h-[90px] lg:w-[70px] lg:h-[70px] md:w-[60px] md:h-[60px] w-[50px] h-[50px] bg-[url('Github.svg')]"/>
+                                <img src={Resources.GithubLogo} alt={"Github"} className="xl:w-[90px] xl:h-[90px] lg:w-[70px] lg:h-[70px] md:w-[60px] md:h-[60px] w-[50px] h-[50px]"/>
                                 <Button link={githubUrl} text={"Github"} width={"md:w-[90px] w-[80px]"} blank={true} className={`w-full flex justify-center`}/>
                             </div>
                             :
@@ -24,7 +25,7 @@ const ImportantLinks = ({githubUrl, itchUrl, trelloUrl}) => {
                         }
                         {itchUrl !== "" ?
                             <div className={"grid auto-cols-max grid-flow-row gap-[15%] place-items-center justify-center"}>
-                                <div className="xl:w-[90px] xl:h-[90px] lg:w-[70px] lg:h-[70px] md:w-[60px] md:h-[60px] w-[50px] h-[50px] bg-[url('Itch.svg')]"/>
+                                <img src={Resources.ItchLogo} alt={"Itch"} className="xl:w-[90px] xl:h-[90px] lg:w-[70px] lg:h-[70px] md:w-[60px] md:h-[60px] w-[50px] h-[50px] bg-[url('Itch.svg')]"/>
                                 <Button link={itchUrl} text={"Itch"} width={"md:w-[90px] w-[80px]"} blank={true} className={`w-full flex justify-center`}/>
                             </div>
                             :
@@ -32,7 +33,7 @@ const ImportantLinks = ({githubUrl, itchUrl, trelloUrl}) => {
                         }
                         {trelloUrl !== "" ?
                             <div className={"grid auto-cols-max grid-flow-row gap-[15%] place-items-center justify-center"}>
-                                <div className="xl:w-[90px] xl:h-[90px] lg:w-[70px] lg:h-[70px] md:w-[60px] md:h-[60px] w-[50px] h-[50px] bg-[url('Trello.svg')]"/>
+                                <img src={Resources.TrelloLogo} alt={"Trello"} className="xl:w-[90px] xl:h-[90px] lg:w-[70px] lg:h-[70px] md:w-[60px] md:h-[60px] w-[50px] h-[50px] bg-[url('Trello.svg')]"/>
                                 <Button link={trelloUrl} text={"Trello"} width={"md:w-[90px] w-[80px]"} blank={true} className={`w-full flex justify-center`}/>
                             </div>
                             :
