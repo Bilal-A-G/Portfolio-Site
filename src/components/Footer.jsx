@@ -1,5 +1,6 @@
 ﻿import Styles from "../Styles.jsx";
 import FadeIn from "./FadeIn.jsx";
+import Resources from "../Resources.jsx";
 
 const Footer = () => {
     return (
@@ -16,12 +17,12 @@ const Footer = () => {
                 </div>
                 <div className="w-full flex">
                     <div className="w-1/2 flex justify-center md:mt-[4%] mt-[10%]">
-                        <div className="sm:w-[24px] sm:h-[24px] md:w-[24px] md:h-[24px] lg:w-[35px] lg:h-[35px] w-[24px] h-[24px] bg-[url('GithubInverted.svg')] bg-cover bg-center rounded-full">
-                            <a className="h-full w-full block " href="https://github.com/Bilal-A-G" target="_blank"></a>
-                        </div>
-                        <div className="sm:w-[24px] sm:h-[24px] md:w-[24px] md:h-[24px] lg:w-[35px] lg:h-[35px] w-[24px] h-[24px] bg-[url('LinkedIn.svg')] bg-cover bg-center rounded-full md:ml-[2%] ml-[5%]">
-                            <a className="h-full w-full block " href="https://www.linkedin.com/in/bilal-abdul-g-288a75239/" target="_blank"></a>
-                        </div>
+                        <a className="sm:w-[24px] sm:h-[24px] md:w-[24px] md:h-[24px] lg:w-[35px] lg:h-[35px] w-[24px] h-[24px]" href="https://github.com/Bilal-A-G" target="_blank">
+                            <img src={Resources.InvertedGithubLogo} alt={"Github"} className="object-cover object-center rounded-full w-full h-full"/>
+                        </a>
+                        <a className="sm:w-[24px] sm:h-[24px] md:w-[24px] md:h-[24px] lg:w-[35px] lg:h-[35px] w-[24px] h-[24px] md:ml-[2%] ml-[5%]" href="https://www.linkedin.com/in/bilal-abdul-g-288a75239/" target="_blank">
+                            <img src={Resources.LinkedInLogo} alt={"LinkedIn"} className="object-cover object-center rounded-full w-full h-full"/>
+                        </a>
                     </div>
                 </div>
             </div>

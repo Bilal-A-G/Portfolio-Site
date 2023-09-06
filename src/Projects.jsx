@@ -1,7 +1,8 @@
 ﻿import Styles from "./Styles.jsx";
+import Resources from "./Resources.jsx";
 
 const Projects = [
-    {name : "Project Mortalis", path: "/project-mortalis", bottom: false, image : "bg-[url(ProjectMortalis.png)]", description : 
+    {name : "Project Mortalis", path: "/project-mortalis", bottom: false, image : `bg-[url(${Resources.ProjectMortalisPicture})]`, description : 
             "A long-term, post apocalyptic, first person shooter project", 
         longDescription: 
             <div>
@@ -26,7 +27,7 @@ const Projects = [
                         <div className="flex"><p>o</p> <p className="pl-[6%]">Particles</p></div>
                         <div className="flex"><p>o</p> <p className="pl-[6%]">Weapon Sway (based on mouse position and move direction)</p></div>
                         <div className="flex"><p>o</p> <p className="pl-[6%]">Animations (procedural and keyframed)</p></div>
-                    </div>, odd : true, underline : true, image : "bg-[url(Gunplay.gif)]"}, 
+                    </div>, odd : true, underline : true, image : `bg-[url(${Resources.GunplayGif})]`}, 
                 {name : "Solid Architecture", 
                 description : 
                     <div>
@@ -42,7 +43,7 @@ const Projects = [
                             Furthermore, most code in the project is highly reusable and easy to extend. Most of this
                             was implemented via the W_I_Zr_Ds package
                         </div>
-                    </div>, odd : false, underline : true, image : "bg-[url(Architecture.png)]"}, 
+                    </div>, odd : false, underline : true, image : `bg-[url(${Resources.ArchitecturePicture})]`}, 
                 {name : "Long Term Support", 
                 description : 
                     <div>
@@ -52,11 +53,11 @@ const Projects = [
                         <div className="pt-[20px]">
                             I am committed to developing it until completion, no matter how long it takes
                         </div>
-                    </div>, odd : true, underline : false, image : "bg-[url(LTS.png)]"}],
+                    </div>, odd : true, underline : false, image : `bg-[url(${Resources.LTSPicture})]`}],
         github: "https://github.com/Bilal-A-G/Project-Mortalis", itch : "https://bilal-a-g.itch.io/project-mortalis", trello : ""
     },
     
-    {name : "Ga_U_SS Engine", path: "/gauss-engine", bottom: false, image : "bg-[url(GaussEngine.png)]", description : 
+    {name : "Ga_U_SS Engine", path: "/gauss-engine", bottom: false, image : `bg-[url(${Resources.GaussEnginePicture})]`, description : 
             "A C++, user friendly, memory efficient, 3D game engine. Made for Ubisoft Next", 
         longDescription: 
             <div>
@@ -83,7 +84,7 @@ const Projects = [
                             Furthermore, I had to recreate the entire coordinate transform pipeline from scratch,
                             even needing to create custom vector and matrix types and define operations with them
                         </div>
-                    </div>, odd : true, underline : true, image : "bg-[url(3DGraphics.gif)]"}, 
+                    </div>, odd : true, underline : true, image : `bg-[url(${Resources.ThreeDGraphicsGif})]`}, 
                 {name : "Data Oriented ECS",
                 description :
                     <div>
@@ -109,7 +110,7 @@ const Projects = [
                         <div className="pt-[20px] pb-[40px]">
                             A byproduct of this architecture is that all component lookups have O(1) time complexity
                         </div>
-                    </div> , odd : false, underline : true, image : "bg-[url(ECS.png)]"}, 
+                    </div> , odd : false, underline : true, image : `bg-[url(${Resources.ECSPicture})]`}, 
                 {name : "Physics",
                 description :
                     <div>
@@ -122,7 +123,7 @@ const Projects = [
                             The physics system uses simplectic Euler integration to turn acceleration into a position change,
                             and impulse forces to resolve collisions
                         </div>
-                    </div>, odd : true, underline : false, image : "bg-[url(Physics.gif)]"}],
+                    </div>, odd : true, underline : false, image : `bg-[url(${Resources.PhysicsGif})]`}],
         github: "https://github.com/Bilal-A-G/NEXT-Submission-2023", itch : "", trello : "https://trello.com/b/RNW4WbNu/ubisoft-next-planning"
     },
     
@@ -152,14 +153,14 @@ const Projects = [
                             each layer with a higher frequency/scale than the last, but with decreasing amplitude/strength.
                             This creates a detailed, but coherent heightmap
                         </div>
-                    </div>, odd : true, underline : true, image : "bg-[url(PerlinNoise.gif)]"}, 
+                    </div>, odd : true, underline : true, image : `bg-[url(${Resources.PerlinNoiseGif})]`}, 
                 {name : "Dynamic Tessellation",
                 description :
                     <div>
                         This project also features a dynamic tesselation system via tesselation shaders that subdivides
                         the terrain based on how close the player is to it, this allows for very detailed terrain 
                         with little to no lag
-                    </div>, odd : false, underline : true, image : "bg-[url(Tesselation.gif)]"}, 
+                    </div>, odd : false, underline : true, image : `bg-[url(${Resources.TesselationGif})]`}, 
                 {name : "Chunk System",
                 description :
                     <div>
@@ -169,7 +170,7 @@ const Projects = [
                         <div className="pt-[20px]">
                             This allows for infinite terrain, while reducing lag and memory usage
                         </div>
-                    </div>, odd : true, underline : false, image : "bg-[url(Chunks.gif)]"}],
+                    </div>, odd : true, underline : false, image : `bg-[url(${Resources.ChunksGif})]`}],
         github: "https://github.com/Bilal-A-G/Procedural-Terrain", itch : "https://bilal-a-g.itch.io/procedurally-generated-terrain", trello : ""
     }
 ]

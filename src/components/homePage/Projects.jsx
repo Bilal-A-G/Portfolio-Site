@@ -3,6 +3,7 @@ import ProjectData from "../../Projects.jsx";
 import ImageWithBorder from "../ImageWithBorder.jsx";
 import Styles from "../../Styles.jsx";
 import FadeIn from "../FadeIn.jsx";
+import Resources from "../../Resources.jsx";
 
 const Projects = () => {
     return(

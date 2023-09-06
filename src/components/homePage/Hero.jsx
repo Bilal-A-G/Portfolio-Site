@@ -1,5 +1,4 @@
-﻿import ImageWithBorder from "../ImageWithBorder.jsx";
-import Styles from "../../Styles.jsx";
+﻿import Styles from "../../Styles.jsx";
 import Button from "../Button.jsx";
 import FadeIn from "../FadeIn.jsx";
 import Moon from "../Moon";
