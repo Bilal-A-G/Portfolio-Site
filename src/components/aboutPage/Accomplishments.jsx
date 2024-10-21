@@ -14,12 +14,7 @@ const Accomplishments = () => {
                 <div className= "px-[15%]">
                     <FadeIn>
                         <div className={`text-black ${Styles.Body} pt-[5%] justify-start w-full flex`}>
-                            <p>o</p><p className="pl-[5%]">Vice President of the OTU Game Programming Club</p>
-                        </div>
-                    </FadeIn>
-                    <FadeIn>
-                        <div className={`text-black ${Styles.Body} pt-[1%] justify-start w-full flex`}>
-                            <p>o</p><p className="pl-[5%]">Currently holding a 4.0 GPA on a 4.3 scale</p>
+                            <p>o</p><p className="pl-[5%]">President of the OTU Game Programming Club</p>
                         </div>
                     </FadeIn>
                     <FadeIn>

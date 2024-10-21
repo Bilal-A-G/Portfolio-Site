@@ -5,7 +5,7 @@ import Contact from "./Contact.jsx";
 import Button from "../Button.jsx";
 import Styles from "../../Styles.jsx";
 import Resources from "../../Resources.jsx";
-import WorkExperience from "./WorkExperience.jsx"
+import ProfessionalExperience from "./ProfessionalExperience.jsx";
 
 const Home = () => {
     return(
@@ -24,7 +24,7 @@ const Home = () => {
                       <Button text={"Read More"} link={"/about"} width={"md:w-[80%] w-[30%]"} className={`md:w-1/2 w-full flex md:justify-start justify-center`}/>
                   </div>
               }/>
-          <WorkExperience/>
+          <ProfessionalExperience/>
           <Projects/>
           <Contact/>
       </div>  
