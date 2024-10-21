@@ -33,6 +33,11 @@ import PerlinNoiseGif from "./resources/gifs/PerlinNoise.gif"
 import PhysicsGif from "./resources/gifs/Physics.gif"
 import TesselationGif from "./resources/gifs/Tesselation.gif"
 
+import DescentPicture from "./resources/images/Descent.png"
+import MonsterIK from "./resources/gifs/SpiderIK.gif"
+import BehaviourTree from "./resources/images/BehaviourTree.png"
+import RopeSystem from "./resources/gifs/RopeGenerator.gif"
+
 const resources = {
     ProfilePicture,
     ReadingPicture,
@@ -68,6 +73,11 @@ const resources = {
     PerlinNoiseGif,
     PhysicsGif,
     TesselationGif,
+    
+    DescentPicture,
+    MonsterIK,
+    BehaviourTree,
+    RopeSystem
 }
 
 export default resources;

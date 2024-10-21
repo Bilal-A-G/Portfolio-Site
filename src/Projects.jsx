@@ -2,59 +2,66 @@
 import Resources from "./Resources.jsx";
 
 const Projects = [
-    {name : "Project Mortalis", path: "/project-mortalis", bottom: false, image : Resources.ProjectMortalisPicture, description : 
-            "A long-term, post apocalyptic, first person shooter project", 
-        longDescription: 
+    {name : "Project Descent", path: "/project-descent", bottom: true, image : Resources.DescentPicture, description :
+            "A survival horror game, with an emphasis on smart AI",
+        longDescription:
             <div>
                 <p>
-                    Project Mortalis is a first person shooter set in a post apocalyptic world.
-                    It has been in development for several years to ensure quality
-                    and is currently going through a huge rewrite and shift in aesthetics  
+                    Project Descent is a survival horror game made in Unity with an emphasis on smart AI, where you
+                    are trapped in a cave and have to escape from a monster. It features several
+                    common industry techniques used in games like Alien Isolation to immerse the player and provide
+                    difficulty.
                 </p>
-                <p className="pt-[5%]">
-                    Furthermore, I created several tools to ease development of this project.
-                    To reuse these tools in the future, they have been published as a Unity package named W_I_Zr_Ds
-                </p>
-                <p className="pt-[10%] underline decoration-dark-red"><a href="https://github.com/Bilal-A-G/W_I_Zr_Ds" target="_blank">W I Zr Ds on Github</a></p>
-            </div>, 
-        features: 
-            [{name : "Satisfying Gunplay", 
-                description: 
+            </div>,
+        features:
+            [{name : "Inverse Kinematics",
+                description:
                     <div>
-                        This project uses several techniques that made the gunplay very satisfying, these include:
-                        <div className="flex pt-[8%]"><p>o</p> <p className="pl-[6%]">Screenshake (when the gun is fired)</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[6%]">Audio</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[6%]">Particles</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[6%]">Weapon Sway (based on mouse position and move direction)</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[6%]">Animations (procedural and keyframed)</p></div>
-                    </div>, odd : true, underline : true, image : Resources.GunplayGif}, 
-                {name : "Solid Architecture", 
-                description : 
-                    <div>
-                        This project makes use of various design patterns and principles of Object Oriented Programming such as:
-                        
-                        <div className="flex md:pt-[20px] pt-[5px]"><p>o</p> <p className="pl-[6%]">Observer</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[6%]">State</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[6%]">Object Pooling</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[6%]">Composition and Polymorphism over Inheritance</p></div>
-                        <div className="flex"><p>o</p> <p className="pl-[6%]">Abstraction</p></div>
-                        
-                        <div className="pt-[10%] pb-[10%]">
-                            Furthermore, most code in the project is highly reusable and easy to extend. Most of this
-                            was implemented via the W_I_Zr_Ds package
-                        </div>
-                    </div>, odd : false, underline : true, image : Resources.ArchitecturePicture}, 
-                {name : "Long Term Support", 
-                description : 
-                    <div>
-                        Lastly, this project has been and will be in development for a long time,
-                        I want to take the time to create a high quality game, and that cannot be done in a short period of time
-                        
+                        This project utilizes inverse kinematics to determine leg placement and other secondary
+                        animations.
+                        This allows for the monster to convincingly climb walls and ceilings, as well as
+                        navigate uneven terrain.
+
                         <div className="pt-[20px]">
-                            I am committed to developing it until completion, no matter how long it takes
+                            The leg placement is controlled by a series of raycast checks, utilizing Unity's
+                            animation rigging package to setup the IK constraints
                         </div>
-                    </div>, odd : true, underline : false, image : Resources.LTSPicture}],
-        github: "https://github.com/Bilal-A-G/Project-Mortalis", itch : "https://bilal-a-g.itch.io/project-mortalis", trello : ""
+                    </div>, odd: true, underline: true, image: Resources.MonsterIK
+            },
+                {
+                    name: "Behaviour tree",
+                    description:
+                        <div>
+                            This project makes use of behaviour trees, which is an industry standard technique
+                            used in AAA games such as Alien Isolation. This allows for complex behaviours,
+                            while keeping the game easy to develop and reducing the chances of bugs.
+
+                            <div className="pt-[20px]">
+                                The following behaviours have been implemented with a behaviour tree:
+                            </div>
+
+                            <div className="flex"><p>o</p> <p className="pl-[6%]">Investigating</p></div>
+                            <div className="flex"><p>o</p> <p className="pl-[6%]">Chasing</p></div>
+                            <div className="flex"><p>o</p> <p className="pl-[6%]">Despawning</p></div>
+                            <div className="flex"><p>o</p> <p className="pl-[6%]">Patrolling</p></div>
+
+                        </div>, odd: false, underline: true, image: Resources.BehaviourTree
+                },
+                {
+                    name: "Dynamic Rope System",
+                    description:
+                        <div>
+                            Lastly, this project features a custom rope renderer,
+                            this was originally designed for a feature that has been cut from the game.
+
+                            <div className="pt-[20px]">
+                                The rope system also has a crucial optimization implemented, if the rope is
+                                straight, then there are fewer vertices in the rope, resulting in better performance.
+                                However, if a rope needs to bend, it will dynamically subdivide to ensure there's
+                                enough detail
+                            </div>
+                        </div>, odd : true, underline : false, image : Resources.RopeSystem}],
+        github: "https://github.com/Bilal-A-G/Descent", itch : "https://bilal-a-g.itch.io/project-descent", trello : ""
     },
     
     {name : "Ga_U_SS Engine", path: "/gauss-engine", bottom: false, image : Resources.GaussEnginePicture, description : 
@@ -126,8 +133,63 @@ const Projects = [
                     </div>, odd : true, underline : false, image : Resources.PhysicsGif}],
         github: "https://github.com/Bilal-A-G/NEXT-Submission-2023", itch : "", trello : "https://trello.com/b/RNW4WbNu/ubisoft-next-planning"
     },
+
+    {name : "Project Mortalis", path: "/project-mortalis", bottom: false, image : Resources.ProjectMortalisPicture, description :
+            "A long-term, post apocalyptic, first person shooter project",
+        longDescription:
+            <div>
+                <p>
+                    Project Mortalis is a first person shooter set in a post apocalyptic world.
+                    It has been in development for several years to ensure quality
+                    and is currently going through a huge rewrite and shift in aesthetics
+                </p>
+                <p className="pt-[5%]">
+                    Furthermore, I created several tools to ease development of this project.
+                    To reuse these tools in the future, they have been published as a Unity package named W_I_Zr_Ds
+                </p>
+                <p className="pt-[10%] underline decoration-dark-red"><a href="https://github.com/Bilal-A-G/W_I_Zr_Ds" target="_blank">W I Zr Ds on Github</a></p>
+            </div>,
+        features:
+            [{name : "Satisfying Gunplay",
+                description:
+                    <div>
+                        This project uses several techniques that made the gunplay very satisfying, these include:
+                        <div className="flex pt-[8%]"><p>o</p> <p className="pl-[6%]">Screenshake (when the gun is fired)</p></div>
+                        <div className="flex"><p>o</p> <p className="pl-[6%]">Audio</p></div>
+                        <div className="flex"><p>o</p> <p className="pl-[6%]">Particles</p></div>
+                        <div className="flex"><p>o</p> <p className="pl-[6%]">Weapon Sway (based on mouse position and move direction)</p></div>
+                        <div className="flex"><p>o</p> <p className="pl-[6%]">Animations (procedural and keyframed)</p></div>
+                    </div>, odd : true, underline : true, image : Resources.GunplayGif},
+                {name : "Solid Architecture",
+                    description :
+                        <div>
+                            This project makes use of various design patterns and principles of Object Oriented Programming such as:
+
+                            <div className="flex md:pt-[20px] pt-[5px]"><p>o</p> <p className="pl-[6%]">Observer</p></div>
+                            <div className="flex"><p>o</p> <p className="pl-[6%]">State</p></div>
+                            <div className="flex"><p>o</p> <p className="pl-[6%]">Object Pooling</p></div>
+                            <div className="flex"><p>o</p> <p className="pl-[6%]">Composition and Polymorphism over Inheritance</p></div>
+                            <div className="flex"><p>o</p> <p className="pl-[6%]">Abstraction</p></div>
+
+                            <div className="pt-[10%] pb-[10%]">
+                                Furthermore, most code in the project is highly reusable and easy to extend. Most of this
+                                was implemented via the W_I_Zr_Ds package
+                            </div>
+                        </div>, odd : false, underline : true, image : Resources.ArchitecturePicture},
+                {name : "Long Term Support",
+                    description :
+                        <div>
+                            Lastly, this project has been and will be in development for a long time,
+                            I want to take the time to create a high quality game, and that cannot be done in a short period of time
+
+                            <div className="pt-[20px]">
+                                I am committed to developing it until completion, no matter how long it takes
+                            </div>
+                        </div>, odd : true, underline : false, image : Resources.LTSPicture}],
+        github: "https://github.com/Bilal-A-G/Project-Mortalis", itch : "https://bilal-a-g.itch.io/project-mortalis", trello : ""
+    },
     
-    {name : "Unity Terrain", path: "/unity-terrain", bottom: true, image: Resources.ProceduralTerrainPicture, description : 
+    {name : "Unity Terrain", path: "/unity-terrain", bottom: false, image: Resources.ProceduralTerrainPicture, description : 
             "A procedural terrain generation demo, made in Unity", 
         longDescription: 
             <div>
@@ -172,7 +234,7 @@ const Projects = [
                         </div>
                     </div>, odd : true, underline : false, image : Resources.ChunksGif}],
         github: "https://github.com/Bilal-A-G/Procedural-Terrain", itch : "https://bilal-a-g.itch.io/procedurally-generated-terrain", trello : ""
-    }
+    },
 ]
 
 export default Projects
