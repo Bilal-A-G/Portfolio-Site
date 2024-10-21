@@ -2,7 +2,7 @@
 import Resources from "./Resources.jsx";
 
 const Projects = [
-    {name : "Project Descent", path: "/project-descent", bottom: true, image : Resources.DescentPicture, description :
+    {name : "Project Descent", path: "/project-descent", bottom: false, image : Resources.DescentPicture, description :
             "A survival horror game, with an emphasis on smart AI",
         longDescription:
             <div>
@@ -189,7 +189,7 @@ const Projects = [
         github: "https://github.com/Bilal-A-G/Project-Mortalis", itch : "https://bilal-a-g.itch.io/project-mortalis", trello : ""
     },
     
-    {name : "Unity Terrain", path: "/unity-terrain", bottom: false, image: Resources.ProceduralTerrainPicture, description : 
+    {name : "Unity Terrain", path: "/unity-terrain", bottom: true, image: Resources.ProceduralTerrainPicture, description : 
             "A procedural terrain generation demo, made in Unity", 
         longDescription: 
             <div>
