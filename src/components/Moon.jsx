@@ -1,5 +1,5 @@
-﻿import {Suspense, useEffect, useState} from "react";
-import {Canvas} from "@react-three/fiber";
+﻿import {Suspense, useEffect, useRef} from "react";
+import {Canvas, useThree} from "@react-three/fiber";
 import {OrbitControls, Preload, useGLTF} from "@react-three/drei";
 
 const Moon = () => {
@@ -14,12 +14,24 @@ const Moon = () => {
     )    
 }
 
-const ThreeJSCanvas = () =>{
+const ThreeJSCanvas = () => {
+    const rendererRef= useRef();
+    useEffect(() => {
+        return () => {
+            if(rendererRef.current){
+                rendererRef.current.dispose();
+            }
+        };
+    }, []);
+    
     return(
         <div className="z-20 w-full h-full flex border-[3px] border-off-white rounded-full">
             <Canvas
                 frameloop={"demand"}
                 shadows={true}
+                onCreated={(state) => {
+                    rendererRef.current = state.gl;
+                }}
                 camera={{position: [400, 0, 0], fov: 33}}
                 gl={{preserveDrawingBuffer: true}}>
 

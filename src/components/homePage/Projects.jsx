@@ -7,7 +7,7 @@ import Resources from "../../Resources.jsx";
 
 const Projects = () => {
     return(
-        <div className="w-full bg-black md:pb-[12%] sm:pb-[18%] pb-[27%] text-white">
+        <div className="w-full bg-black md:pb-[12%] sm:pb-[25%] pb-[40%] text-white">
             <FadeIn>
                 <p className={`w-full justify-center pt-[8%] flex ${Styles.Body}`}>Here are some of my</p>
             </FadeIn>
