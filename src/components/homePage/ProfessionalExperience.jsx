@@ -13,7 +13,7 @@ const ProfessionalExperience = () => {
             <FadeIn>
                 <p className={`w-full justify-center mt-[1%] flex ${Styles.SectionSubHeader}`}>Professional Background</p>
             </FadeIn>
-            <div className="w-[3px] lg:h-[915px] md:h-[783px] absolute left-1/2 mt-[4%] bg-white"/>
+            <div className="w-[3px] xl:h-[960px] lg:h-[915px] md:h-[783px] absolute left-1/2 mt-[4%] bg-white"/>
             <div className="w-full lg:gap-[6%] lg:px-[6%] md:gap-y-[6%] sm:gap-y-[2%] gap-y-[2%] mt-[8%] justify-center grid place-items-center md:grid-cols-1 lg:grid-cols-1 auto-rows-max md:grid-flow-cols">
                 {ProfessionalExperienceList.map(({name, longDescription, date, position}, i) =>
                     <div>
