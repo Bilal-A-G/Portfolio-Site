@@ -2,8 +2,7 @@ import FadeIn from "../FadeIn.jsx";
 import Styles from "../../Styles.jsx";
 import ImageWithBorder from "../ImageWithBorder.jsx";
 import Button from "../Button.jsx";
-import WorkExperience from "../../WorkExperience.jsx";
-import EducationExperience from "../../EducationExperience.jsx";
+import ProfessionalExperienceList from "../../ProfessionalExperienceList.jsx";
 
 const ProfessionalExperience = () => {
     return(
@@ -14,31 +13,28 @@ const ProfessionalExperience = () => {
             <FadeIn>
                 <p className={`w-full justify-center mt-[1%] flex ${Styles.SectionSubHeader}`}>Professional Background</p>
             </FadeIn>
-            <div className="w-[5px] h-[1140px] absolute rounded-lg left-1/2 mt-[4%] bg-[conic-gradient(transparent_0%_75%,white_75%)] bg-[length:6px_28px]"/>
+            <div className="w-[3px] lg:h-[915px] md:h-[783px] absolute left-1/2 mt-[4%] bg-white"/>
             <div className="w-full lg:gap-[6%] lg:px-[6%] md:gap-y-[6%] sm:gap-y-[2%] gap-y-[2%] mt-[8%] justify-center grid place-items-center md:grid-cols-1 lg:grid-cols-1 auto-rows-max md:grid-flow-cols">
-                {EducationExperience.map(({name, longDescription}, i) =>
-                    <div className={`${i % 2 === 0 ? "pr-[400px]" : "pl-[400px]"}`}>
-                        <FadeIn>
-                            <div className="text-white w-[350px] border-2 rounded-lg">
-                                <p className={`text-white ${Styles.SubSectionHeader} mt-[10%] justify-center text-center flex`}>{name}</p>
-                                <p className={`flex justify-center px-[10%] ${Styles.SmallBody} pt-[5%] pb-[10%]`}>
-                                    {longDescription}
-                                </p>
+                {ProfessionalExperienceList.map(({name, longDescription, date, position}, i) =>
+                    <div>
+                        <div className={`w-[30px] h-[30px] border-white border-2 absolute lg:ml-[362px] md:ml-[312px] rounded-2xl`}>
+                            <div className={`w-full h-full place-items-center justify-center flex`}>
+                                <div className={`w-[10px] h-[10px] bg-white rounded-2xl`}></div>
                             </div>
-                        </FadeIn>
-                    </div>
-                )}
-                {WorkExperience.map(({name, longDescription}, i) =>
-                <div className={`${i % 2 === 0 ? "pr-[400px]" : "pl-[400px]"}`}>
-                    <FadeIn>
-                        <div className="text-white w-[350px] border-2 rounded-lg">
-                            <p className={`text-white ${Styles.SubSectionHeader} mt-[10%] justify-center text-center flex`}>{name}</p>
-                            <p className={`flex justify-center px-[10%] ${Styles.SmallBody} pt-[5%] pb-[10%]`}>
-                                {longDescription}
-                            </p>
                         </div>
-                    </FadeIn>
-                </div>
+                        <div className={`${i % 2 === 0 ? "lg:pr-[400px] md:pr-[350px]" : "lg:pl-[400px] md:pl-[350px]"}`}>
+                            <FadeIn>
+                                <div className="text-white lg:w-[350px] md:w-[300px] border-2 rounded-lg">
+                                    <p className={`text-white ${Styles.SubSectionHeader} mt-[10%] justify-center text-center flex font-extrabold`}>{name}</p>
+                                    <p className={`text-white ${Styles.Body} mt-[2%] justify-center text-center flex`}>{position}</p>
+                                    <p className={`text-white ${Styles.Subtitle} mt-[2%] justify-center text-center flex italic`}>{date}</p>
+                                    <p className={`flex justify-center px-[10%] ${Styles.SmallBody} pt-[5%] pb-[10%]`}>
+                                        {longDescription}
+                                    </p>
+                                </div>
+                            </FadeIn>
+                        </div>
+                    </div>
                 )}
             </div>
         </div>

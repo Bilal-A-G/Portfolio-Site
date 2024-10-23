@@ -1,5 +1,18 @@
-const WorkExperience = [
-    {name : "RP4K - Programming Instructor (Nov 2023 - Present)", 
+const ProfessionalExperienceList = [
+    {name : "Ontario Tech University",
+        longDescription:
+            <div>
+                <li className="pt-[5%] text-left">
+                    Was the president of the Game Programming club
+                </li>
+                <li className="pt-[5%] text-left">
+                    Graduated with a bachelors of IT degree
+                </li>
+            </div>,
+        date: "(Sep 2021 - April 2025)",
+        position: "Game Development and Inter Media"
+    },
+    {name : "RP4K", 
         longDescription: 
             <div>
                 <li className="pt-[5%] text-left">
@@ -11,9 +24,11 @@ const WorkExperience = [
                 <li className="pt-[5%] text-left">
                     Collaborated with other instructors to develop new courses, ensuring high code quality and relevance to industry standards
                 </li>
-            </div>, 
+            </div>,
+        date: "(Nov 2023 - Present)",
+        position: "Programming Instructor"
     },
-    {name : "Heads Up - VR Programmer (Oct 2024 - Dec 2024)",
+    {name : "Heads Up",
         longDescription:
             <div>
                 <li className="pt-[5%] text-left">
@@ -26,7 +41,9 @@ const WorkExperience = [
                     Researched various risk factors for concussions in hockey as well as techniques to mitigate them
                 </li>
             </div>,
+        date: "(Oct 2024 - Dec 2024)",
+        position: "VR Programmer"
     }
 ]
 
-export default WorkExperience
+export default ProfessionalExperienceList
