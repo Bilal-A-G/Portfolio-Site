@@ -11,7 +11,7 @@ const Footer = () => {
                 </div>
                 <div className="w-full flex pl-[6%]">
                     <div className="w-1/2 flex justify-center md:mt-[2%] mt-[5%] px-[10%]">
-                        <p className={`${Styles.Subtitle}`}>Copyright 2023 Bilal Abdul Gaffoor</p>
+                        <p className={`${Styles.Subtitle}`}>Copyright 2024 Bilal Abdul Gaffoor</p>
                     </div>
                     <button className={`${Styles.Subtitle} mt-[1.5%] md:ml-[30%] ml-[12%]`} onClick={() => document.documentElement.scrollTop = 0}>Back To Top</button>
                 </div>

@@ -38,6 +38,8 @@ import MonsterIK from "./resources/gifs/SpiderIK.gif"
 import BehaviourTree from "./resources/images/BehaviourTree.png"
 import RopeSystem from "./resources/gifs/RopeGenerator.gif"
 
+import MoonStatic from "./resources/images/MoonStatic.png"
+
 const resources = {
     ProfilePicture,
     ReadingPicture,
@@ -77,7 +79,9 @@ const resources = {
     DescentPicture,
     MonsterIK,
     BehaviourTree,
-    RopeSystem
+    RopeSystem,
+    
+    MoonStatic
 }
 
 export default resources;
