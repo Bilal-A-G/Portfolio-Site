@@ -26,11 +26,11 @@ const Hero = () => {
                     <div className="w-2/3 grid place-items-start grid flex md:mt-[2%] mt-[0%] md:pt-[0%] pt-[10%] md:pl-[0%] sm:pl-[15%] pl-[5%]">
                         <FadeIn>
                             <div className={"2xl:w-[690px] 2xl:h-[690px] xl:w-[575px] xl:h-[575px] " +
-                                "lg:w-[460px] lg:h-[460px] md:w-[345px] md:h-[345px] sm:w-[455px] sm:h-[455px] lg:flex hidden w-[350px] h-[350px] pr-[20px] pb-[20px]"}>
+                                "lg:w-[460px] lg:h-[460px] md:w-[345px] md:h-[345px] sm:w-[455px] sm:h-[455px] lg:block hidden w-[350px] h-[350px] pr-[20px] pb-[20px]"}>
                                 <Moon/>
                             </div>
                             <div className={"2xl:w-[690px] 2xl:h-[690px] xl:w-[575px] xl:h-[575px] " +
-                                "lg:w-[460px] lg:h-[460px] md:w-[345px] md:h-[345px] sm:w-[455px] sm:h-[455px] lg:hidden flex w-[350px] h-[350px] pr-[20px] pb-[20px]"}>
+                                "lg:w-[460px] lg:h-[460px] md:w-[345px] md:h-[345px] sm:w-[455px] sm:h-[455px] lg:hidden block w-[350px] h-[350px] pr-[20px] pb-[20px]"}>
                                 <ImageWithBorder image={resources.MoonStatic} style={Styles.LargeImage} sphere={true}/>
                             </div>
                         </FadeIn>
