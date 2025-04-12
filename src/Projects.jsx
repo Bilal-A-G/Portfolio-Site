@@ -189,7 +189,7 @@ const Projects = [
         github: "https://github.com/Bilal-A-G/Project-Mortalis", itch : "https://bilal-a-g.itch.io/project-mortalis", trello : ""
     },
     
-    {name : "Unity Terrain", path: "/unity-terrain", bottom: true, image: Resources.ProceduralTerrainPicture, description : 
+    {name : "Unity Terrain", path: "/unity-terrain", bottom: false, image: Resources.ProceduralTerrainPicture, description : 
             "A procedural terrain generation demo, made in Unity", 
         longDescription: 
             <div>
@@ -234,6 +234,46 @@ const Projects = [
                         </div>
                     </div>, odd : true, underline : false, image : Resources.ChunksGif}],
         github: "https://github.com/Bilal-A-G/Procedural-Terrain", itch : "https://bilal-a-g.itch.io/procedurally-generated-terrain", trello : ""
+    },
+
+    {name : "NEXT 2025", path: "/next-2025", bottom: true, image: Resources.NEXT2025Picture, description :
+            "A performant diorama and volumetric cloud renderer submitted to Ubisoft NEXT 2025",
+        longDescription:
+            <div>
+                <p>
+                    NEXT 2025 is my submission to Ubisoft NEXT 2025 in the technical art category, where it placed top 3!
+                </p>
+                <p className="pt-[30px]">
+                    In this project, I focused on performance, visual fidelity, and cool tech above all else.
+                </p>
+            </div>,
+        features:
+            [{name : "Volumetric Clouds",
+                description :
+                    <div>
+                        This project utilizes ray marching to render 3D volumetric clouds in the sky. 
+                        It also features a custom pipeline to render these clouds, all the way from noise generation to a composite pass where the clouds
+                        are injected into the scene based off of depth
+
+                        <div className="pt-[20px]">
+                            This system is also very performant, running 2 times as fast as Unity HDRP's clouds
+                        </div>
+                    </div>, odd : true, underline : true, image : Resources.CloudsGIF},
+                {name : "LODs and Imposters",
+                    description :
+                        <div>
+                            This project also features heavy use of imposters and LODs to render thousands of foliage objects, 
+                            these imposters and lower poly LODs are swapped in when the player gets too far away, allowing a 
+                            10x increase in framerate. Note, the trees are also modelled a certain way to allowing for rendering
+                            without much GPU quad overdraw
+                        </div>, odd : false, underline : true, image : Resources.LODGif},
+                {name : "Post Processing & Lighting",
+                    description :
+                        <div>
+                            Lastly, this project also features custom post processing effects make to make it look cinematic.
+                            These include tonemapping, colour adjustments, bloom, etc.
+                        </div>, odd : true, underline : false, image : Resources.PostProcessingGif}],
+        github: "https://github.com/Bilal-A-G/NEXT-Submission-2025", itch : "", trello : ""
     },
 ]
 

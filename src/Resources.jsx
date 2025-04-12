@@ -38,6 +38,11 @@ import MonsterIK from "./resources/gifs/SpiderIK.gif"
 import BehaviourTree from "./resources/images/BehaviourTree.png"
 import RopeSystem from "./resources/gifs/RopeGenerator.gif"
 
+import NEXT2025Picture from "./resources/images/NEXT2025.webp"
+import CloudsGIF from "./resources/gifs/Clouds.gif"
+import LODGif from "./resources/gifs/LOD.gif"
+import PostProcessingGif from "./resources/gifs/PostProcessing.gif"
+
 import MoonStatic from "./resources/images/MoonStatic.png"
 
 const resources = {
@@ -81,7 +86,11 @@ const resources = {
     BehaviourTree,
     RopeSystem,
     
-    MoonStatic
+    MoonStatic,
+    NEXT2025Picture,
+    CloudsGIF,
+    LODGif,
+    PostProcessingGif
 }
 
 export default resources;
